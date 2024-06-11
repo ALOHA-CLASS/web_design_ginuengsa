@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>C-1 해운대빛축제</title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <main>
+    <!-- 상단메뉴 -->
+    <header>
+      <div class="logo">
+        <a href="#"><img src="./img/logo.png" alt="로고"></a>
+      </div>
+      <nav class="menu">
+        <ul class="navi">
+          <li><a href="#">이용안내</a>
+            <ul class="subMenu">
+              <li><a href="#">이용방법</a></li>
+              <li><a href="#">이용시간</a></li>
+              <li><a href="#">이용요금</a></li>
+            </ul>
+          </li>
+          <li><a href="#">이벤트정보</a>
+            <ul class="subMenu">
+              <li><a href="#">현장이벤트</a></li>
+              <li><a href="#">온라인이벤트</a></li>
+              <li><a href="#">이벤트예약</a></li>
+            </ul>
+          </li>
+            <li><a href="#">프로그램</a>
+            <ul class="subMenu">
+              <li><a href="#">프로그램안내</a></li>
+              <li><a href="#">온라인예약</a></li>
+              <li><a href="#">단체예약상담</a></li>
+            </ul>
+          </li>
+            <li><a href="#">고객센터</a>
+            <ul class="subMenu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+              <li><a href="#">자료실</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bodyWrap" >
+      <!-- 이미지슬라이드 -->
+      <div class="imgSlide">
+        <a href="#"><img src="./img/img1.jpg" alt="해운대빛축제1"><span class="imgText">해운대빛축제 1</span></a>
+        <a href="#"><img src="./img/img2.jpg" alt="해운대빛축제2"><span class="imgText">해운대빛축제 2</span></a>
+        <a href="#"><img src="./img/img3.jpg" alt="해운대빛축제3"><span class="imgText">해운대빛축제 3</span></a>
+      </div>
+      <!-- 컨텐츠 : 공지/갤러리 , 배너, 바로가기 -->
+      <div class="contents"> <!-- contents:tabMenu와 otherwrap 묶어줌 -->
+        <div class="tabBox">
+          <ul class="tabMenu"> <!-- tabMenu:공지사항과 갤러리 묶어줌 -->
+          <li class="active"><a href="#">공지사항</a>
+            <div class="tabBG notice">
+              <ul>
+                <li><a href="#">해변에서 펼쳐지는 노래공연<span>2020.11.09</span></a></li>
+                <li><a href="#">바다의 야경과 빛공연 관람하기<span>2020.11.09</span></a></li>
+                <li><a href="#">불꽃놀이 이벤트를 신청하세요<span>2020.11.09</span></a></li>
+                <li><a href="#">빛축제 단체관람 안내<span>2020.11.09</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class=""><a href="#">갤러리</a>
+            <div class="tabBG gallery">
+              <ul>
+                <li><a href="#"><img src="img/icon1.jpg" alt="해운대빛축제 갤러리1"></a></li>
+                <li><a href="#"><img src="img/icon2.jpg" alt="해운대빛축제 갤러리2"></a></li>
+                <li><a href="#"><img src="img/icon3.jpg" alt="해운대빛축제 갤러리3"></a></li>
+              </ul>
+            </div>
+          </li>
+          </ul>  <!-- tabMenu 끝 -->
+        </div>
+        <div class="banner">
+          <a href="#">배너</a>
+        </div>
+        <div class="direct">
+          <a href="#">바로가기</a>
+        </div>
+    </div> <!-- contents 끝 -->
+      <!-- 하단  -->
+      <footer>
+        <div class="footerLogo">
+          <a href="#"><img src="./img/footerLogo.png" alt="로고"></a>
+        </div>
+
+        <div class="footerGroup">
+          <div class="footerMenu">
+            <a href="#">하단메뉴1</a>
+            <a href="#">하단메뉴2</a>
+            <a href="#">하단메뉴3</a>
+          </div>
+
+          <div class="footerCright">
+            COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <div id="modalWrap"> <!-- 레이어 팝업창 영역 -->
+    <div class="modal">
+      <h1>빛축제 공연 정보</h1>
+      <p>
+        빛축제의 모든 공연과 전시정보를 한눈에 볼 수 있습니다. 빛축제 관련 공연과 캘린더 배포, 자전거 투어 행사, 바다 야경 명소, 빛나는 해변의 다리 등 자연환경을 살린 아름다운 해변에서의 빛축제 정보를 안내해드립니다.
+      </p>
+      <button type="button" class="btn">닫 기</button>
+    </div>
+  </div> <!-- 레이어 팝업창 영역 끝 -->
+</body>
+</html>

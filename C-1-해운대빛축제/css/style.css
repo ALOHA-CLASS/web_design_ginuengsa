@@ -1,0 +1,287 @@
+/* 초기 설정*/
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body{
+	background: #ffffff;
+	color:#222328
+}
+a{
+	text-decoration:none;
+	display:block;
+}
+
+/********본문시작*********/
+/* header와 bodyWrap을 감싸는 main */
+main{
+	width:1000px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+/* 메뉴와 로고가 들어가는 header */
+header{
+	float:left;
+	width:200px;
+	height:670px;
+	margin-right:10px;
+	background: #bbbbbb;
+}
+/** 클래스 logo의 width값은 부모인 header의 영향을 받기 때문에
+width:100%로 해주어도 되지만, 실기시험의 요구사항 명세서에
+가로 200px과 세로 40px이라고 명시가 되어 있으므로 명시된 대로 해주어서
+혹시나 감점요인이 되지 않도록 합니다.
+*/
+/*로고*/
+.logo{
+	width:200px;
+	height:40px;
+	padding:30px 0;
+	background: #ffffff;
+}
+/*로고이미지*/
+.logo img{
+  width:200px; /*지시사항에 적힌대로 width값 */
+  height:40px; /*지시사항에 적힌대로 height값 */
+}
+
+/*메인메뉴*/
+.menu{
+	width:100%;
+	text-align:center;
+}
+.navi > li{width:100%;}
+.navi > li > a {
+	width:100%;
+  padding:10px 0;
+	font-size:16px;
+	font-weight:bold;
+	background-color:#222328;
+	color:#eeeeee;
+}
+.navi > li > a:hover{
+	background-color:#f6b62c;
+	color:#222328;
+}
+.subMenu{	width:100%;	display:none;}
+.subMenu > li > a{
+	width:100%;
+	padding:10px 0;
+	font-size:14px;
+	font-weight:bold;
+	background:#666666;
+	color:#ffffff;
+}
+.subMenu > li > a:hover{
+	background-color:#777777;
+	color: #f6b62c;
+}
+
+/* 이미지슬라이드 + 컨텐츠 + 푸터 묶음 */
+.bodyWrap {
+	float:right;
+	width:790px;
+}
+
+/* 이미지슬라이드 */
+.imgSlide{
+	position:relative;
+	width:100%;
+	height:350px;
+	overflow: hidden;
+}
+.imgSlide > a{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.imgSlide a > img {height:100%;}
+.imgText{
+	position:absolute;
+	left:50%;
+  top:50%;
+  margin: -10px -160px;
+  background:rgba(246,182,44, 0.7);
+	color:#000000;
+	padding:16px 100px;
+	font-weight: bold;
+}
+
+/* 컨텐츠 영역 */
+.contents{
+	width:100%;
+	height:200px;
+	padding:0;
+	margin:10px 0;
+	display:flex;
+	justify-content: space-between;
+	position: relative; /*탭 메뉴 때문에 필요*/
+}
+/*컨텐츠의 각각의 넓이 */
+.contents > div:nth-of-type(1){width:60%;}
+.contents > div:nth-of-type(2){width:20%; margin:0 10px;}
+.contents > div:nth-last-of-type(1){width:20%;}
+
+/* 첫번째 컨텐츠 탭 메뉴 */
+.tabMenu{ display:flex;}
+
+/*공지사항 갤러리 제목*/
+.tabMenu > li > a{
+	padding:0 10px;
+	min-width: 85px;
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+	background:#eeeeee;
+	border:1px solid #dddddd;
+}
+.tabMenu > li > a:hover{ background:#f6b62c;}
+
+/* 공지사항과 갤러리 탭 맞닿는 부분에 보더를 없애줌 */
+.tabMenu > li:first-child a{border-right:none;}
+/* 활성화된 탭의 스타일 */
+.tabMenu > li.active > a{ font-weight: bold; background-color:#ffffff;}
+/*탭 콘텐츠 영역 스타일*/
+.tabBG{
+	position:absolute;
+	overflow:hidden;
+	width:462px; /* chrome inspect(검사) 보고 수치 계산 */
+	height:168px; /* chrome inspect(검사) 보고 수치 계산 */
+	background:#ffffff;
+}
+ /*active 클래스가 추가된 탭 콘텐츠 영역 스타일*/
+.tabMenu > li.active div{
+	border:1px solid #dddddd;
+	z-index:1;
+}
+
+ /* 공지사항 */
+.notice ul{ padding:20px 0;}
+.notice ul li{ padding:8px 20px;
+	margin:0 10px;
+	font-size:14px;
+}
+.notice li:nth-child(even){background:rgba(0,0,0, 0.05);} /*공지사항 리스트 짝수에만 배경 색상 넣기 */
+.notice li:hover{color:#222328;background:rgba(246,182,44, 0.1);}
+.notice li span {float:right;} /* 날짜 오른쪽 정렬 */
+
+/* 갤러리 */
+.gallery{	left:0; }
+.gallery ul {
+	display: flex;
+  justify-content: space-around;
+	align-items: center;
+	height:100%; /*높이 값이 있어야 수직 정렬 됨*/
+}
+.gallery img:hover{ opacity:0.5; }
+
+/* 배너와 바로가기 공통  */
+.banner, .direct{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* 배너 이미지 */
+.banner{
+	background:#dddddd url("../img/banner.jpg") center center ;
+}
+/* 바로가기 이미지 */
+.direct{
+	background: url("../img/direct.jpg") center center ;
+}
+/* 배너, 바로가  글자 스타일 */
+.banner a,
+.direct a{
+	width:50%;
+	padding:10px 0;
+	text-align:center;
+	color:#ffffff;
+	font-weight:bold;
+	background-color:rgba(0,0,0,0.5);
+}
+.banner a:hover,
+.direct a:hover {
+	background:rgba(255,255,255,0.5);
+  color:#333333;
+}
+
+/* Footer 하단  */
+footer{
+	width:100%;
+	height:100px;
+	background:#bbbbbb;
+	display: flex;
+	justify-content: space-between;
+}
+/* footer안에 있는 각 컨텐츠의 영역 */
+footer > div:nth-of-type(1) {width:30%;} /* footerLogo */
+footer > div:nth-last-of-type(1) {width:70%;} /* footerGroup */
+/* 하단 로고 */
+.footerLogo {display:flex; justify-content:center; align-items: center;}
+.footerLogo img{width:200px;}
+/* 하단메뉴 + 카피라이트 묶음 */
+.footerGroup{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding:20px;
+}
+/* 하단메뉴 */
+.footerMenu{
+	display:flex;
+	justify-content: space-around;
+	width:80%;
+	margin:0 auto;
+}
+.footerMenu a {color:#ffffff;}
+.footerMenu > a:hover{color:#dddddd;}
+/* 카피라이트 */
+.footerCright{
+	font-size:14px;
+	text-align:center;
+	color:#ffffff;
+}
+
+/* 레이어 팝업  */
+#modalWrap{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 1;
+}
+#modalWrap.active{
+	display:block;
+}
+.modal{
+	position:fixed;
+	width:400px;
+	padding:20px;
+	top:30%;
+	left:30%;
+	background:#ffffff;
+}
+.modal > h1{
+	margin:10px 0;
+	text-align:center;
+	letter-spacing: -1px;
+}
+.modal > p{
+	text-align:justify;
+}
+.btn{
+	width:100%;
+	padding:10px;
+	margin-top:20px;
+	background:#f6b62c;
+	color:#ffffff;
+	border:0;
+	font-weight:bold;
+	cursor:pointer;
+}
+.btn:hover{background:rgba(246,182,44, 0.2); color:#f6b62c;}

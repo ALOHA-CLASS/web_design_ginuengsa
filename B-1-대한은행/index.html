@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>B-1 대한은행</title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="headerWrap">
+      <a class="logo" href="#">
+        <img src="./img/logo.png" alt="로고">
+      </a>
+      <nav class="mainMenu">
+        <a href="#">개인</a>
+        <a href="#">기업</a>
+        <a href="#">금융상품</a>
+        <a href="#">카드</a>
+        <!-- 서브 메뉴  -->
+        <nav class="subMenu">
+          <ul>
+            <li><a href="#">조회</a></li>
+            <li><a href="#">이체</a></li>
+            <li><a href="#">공과금</a></li>
+            <li><a href="#">예금/신탁</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">조회</a></li>
+            <li><a href="#">이체</a></li>
+            <li><a href="#">전자결재</a></li>
+            <li><a href="#">수표/어음</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">저축상품</a></li>
+            <li><a href="#">대출상품</a></li>
+            <li><a href="#">투자상품</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">카드 정보</a></li>
+            <li><a href="#">카드 신청</a></li>
+            <li><a href="#">이용내역조회</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- 이미지슬라이드 -->
+    <div class="imgSlide">
+      <a href="#"><img src="./img/img1.jpg" alt="같지만 다른 은행, 대한은행"><span class="imgText">같지만 다른 은행, 대한은행</span></a>
+      <a href="#"><img src="./img/img2.jpg" alt="일상에서 더 쉽게, 더 자주 "><span class="imgText">일상에서 더 쉽게, 더 자주 </span></a>
+      <a href="#"><img src="./img/img3.jpg" alt="나만의 은행, 대한은행"><span class="imgText">나만의 은행, 대한은행</span></a>
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="contents">
+      <div>
+        <ul class="tabMenu"> <!-- tabMenu:공지사항과 갤러리 묶어줌 -->
+        <li class="active"><a href="#">공지사항</a>
+          <div class="tabBG notice">
+            <ul>
+              <li><a href="#">편리함과 혜택을 더한 대한은행 개선 안내<span>2020.11.24</span></a></li>
+              <li><a href="#">해외송금서비스 점검 공지<span>2020.11.24</span></a></li>
+              <li><a href="#">고객센터 전화상담서비스 시간 변경 안내<span>2020.11.24</span></a></li>
+              <li><a href="#">개인정보처리방침 변경 안내<span>2020.11.24</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class=""><a href="#">갤러리</a>
+          <div class="tabBG gallery">
+            <ul>
+              <li><a href="#"><img src="./img/icon1.jpg" alt="갤러리1"></a></li>
+              <li><a href="#"><img src="./img/icon2.jpg" alt="갤러리2"></a></li>
+              <li><a href="#"><img src="./img/icon3.jpg" alt="갤러리3"></a></li>
+            </ul>
+          </div>
+        </li>
+        </ul>  <!-- tabMenu 끝 -->
+      </div>
+      <div class="banner">
+        <a href="#">배너</a>
+      </div>
+      <div class="direct">
+        <a href="#">바로가기</a>
+      </div>
+    </div>
+  </main>
+  <!-- 하단 -->
+  <footer>
+    <div class="footerWrap">
+      <div class="footerLogo">
+        <img src="./img/logo.png" alt="하단로고">
+      </div>
+      <div class="footerGroup">
+        <div class="footerMenu">
+            <a href="#">하단메뉴1</a>
+            <a href="#">하단메뉴2</a>
+            <a href="#">하단메뉴3</a>
+          </div>
+        <div class="footerCright">
+            COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 팝업 -->
+  <div id="modalWrap">
+    <div class="modal">
+      <h1>편리함과 혜택을 더한 대한은행 개선 안내</h1>
+      <p>
+        안녕하세요. 대한은행 입니다. 편리해진 홈, 상품, 메뉴와 새로운 서비스 추가로 혜택을 더한 대한은행 개선 내용을 확인해보세요. 홈이 입출금계좌, 편의서비스 중심으로 정리되었어요. 홈에서 다른은행 조회 하기가 더 쉬워졌고, 더 나은 혜택을 제공하기 위해 플러스박스, 행운상자 서비스가 추가되었어요. 잔액 숨기기 기능을 설정한 경우 홈에서 일시적으로 잔액확인을 눌러 쉽게 잔액 확인이 가능 해졌어요.
+      </p>
+      <button class="btn">닫기</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* reset */
+:root {
+  --main : #ff2525;       /* 주조색 */
+  --sub : #2ed959;        /* 보조색 */
+  --bg : #ffffff;         /* 배경색 */
+  --text : #333333;       /* 텍스트색 */
+}
+
+* { margin: 0; padding: 0; list-style:none; }
+body { background: var(--bg);  color: var(--text); }
+a {  text-decoration:none; }
+
+
+
+
+
+

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* 초기설정 */
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  box-sizing: border-box;
+}
+body{
+  background: #ffffff;
+  color:#333333;
+}
+a{
+  text-decoration:none;
+  display: block;
+}
+/* 확장형 header, headerWrap을 감쌈 */
+header{
+  width:100%;
+  height:100px;
+  background:#00C73C;
+}
+/* 메뉴와 로고가 들어가고 중앙정렬하는  */
+.headerWrap{
+  width:1200px;
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+/*로고*/
+.logo{
+  width:20%;
+  height:100%;
+  display: flex; /*로고 이미지를 중앙에 위치 시키기 위해 flex로 지정하여 수평, 수직 정렬이 되도록 하기 위해.*/
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+/*로고이미지*/
+.logo > img {
+  width:200px; /*지시사항에 적힌대로 width값 */
+  height:40px; /*지시사항에 적힌대로 height값 */
+}
+
+/*상단메뉴*/
+.mainMenu {
+  width:70%;
+  height:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainMenu > a {
+  width:100%;
+  padding:30px 0;
+  text-align: center;
+  color:#333333;
+  font-weight:bold;
+}
+.mainMenu a:hover {
+  background:rgba(255,255,255, 0.2);
+}
+
+/********본문시작*********/
+/* 서브메뉴 + 이미지슬라이드 + 컨텐츠를 감싸는 main */
+main{
+  width:1200px;
+  margin:0 auto;
+  position:relative;
+}
+/** 서브메뉴가 main태그 안에 들어와 있는 이유는
+main의 넓이 만큼 그대로 넓이를 가져야 해서.
+B형은 확장형이기 때문에 main태그 안에 subMenu가 존재하는 것이
+별도로 subMenu넓이를 계산해주지 않아도 되기 때문.
+ */
+.subMenu{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  background:#222222;
+  position:absolute;
+  z-index: 1;
+}
+/* 메인 메뉴의 크기 만큼
+우측에 존재 하기 위해 subMenuWrap이 존재함.*/
+.subMenuWrap{
+  width:70%;
+  height:100%;
+  display:flex;
+  justify-content: space-around;
+}
+.subMenuWrap > ul {
+  width:100%;
+}
+.subMenuWrap > ul > li > a{
+  text-align: center;
+  padding:8px 0;
+  color:#dddddd;
+}
+.subMenuWrap > ul > li > a:hover{
+  background:rgba(255,255,255, 0.2);
+  color:#ffffff;
+}
+
+/*이미지슬라이드*/
+.imgSlide{
+  position:relative;
+  width:100%;
+  height:300px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+.imgSlide > a{
+  position:absolute;
+  top:0;
+  left:0;
+  overflow: hidden;/* 이미지슬라이드가 상하로 움직일때는 반드시 필요 */
+}
+.imgSlide a > img {height:100%;}
+.imgText{
+  position:absolute;
+	left:50%;
+  top:50%;
+  margin: -10px -160px;
+  background: rgba(0,199,60, 0.4) ;
+	color:#000000;
+  padding:16px 100px;
+	font-weight: bold;
+}
+
+/*컨텐츠*/
+.contents{
+  width: 100%;
+  height:200px;
+  padding:0;
+  margin:10px 0;
+  display:flex;
+	justify-content: space-between;
+}
+/* 각각 컨텐츠 박스의 영역 */
+.contents div{ width:33.3%;}
+.contents > div:nth-of-type(2){margin:0 10px;}
+/* 공지사항과 갤러리 공통 */
+.contents h4{
+  width:30%;
+  padding:6px 10px;
+  background:#333333;
+  color:#eeeeee;
+  font-weight: bold;
+  text-align: center;
+  cursor:pointer;
+}
+.contents h4:hover{
+  background:#00C73C;
+  color:#222328;
+}
+.contents ul{
+  height:167px; /* chrome inspect(검사) 보고 수치 계산 */
+  background:#ffffff;
+  border:1px solid #dddddd;
+  box-sizing: border-box;
+  font-size:12px;
+  line-height: 40px;
+}
+
+/* 컨텐츠 첫번째 : 공지사항 */
+.notice li{padding:0 10px;}
+.notice li:nth-child(even){background:#eeeeee;}
+.notice li:hover{color:#222328;background:#dddddd;}
+.notice li span {float:right;} /* 날짜 오른쪽 정렬 */
+
+/* 컨텐츠 두번째 : 갤러리 */
+.gallery ul{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery img:hover{opacity: 0.7;}
+/* 컨텐츠 세번째 : 바로가기 */
+.direct{
+  overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background: url("../img/direct.jpg") center center ;
+  }
+.direct > a{
+	width:50%;
+  padding:10px 0;
+	text-align:center;
+  font-weight:bold;
+	color:#ffffff;
+	background:rgba(0,0,0,0.5);
+}
+
+.direct > a:hover{
+  background:rgba(255,255,255,0.5);
+  color:#333333;
+}
+
+/* 확장형 footer, footerWrap을 감쌈 */
+footer{
+  width:100%;
+  height:100px;
+  background:#737373;
+}
+/* 하단로고 + 하단메뉴 + 카피라이트 감싸고 중앙정렬 */
+.footerWrap{
+  width:1200px;
+  height:100%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* 카피이트 */
+.footerCright {
+  width:60%;
+  padding-left:10px;
+  display:flex;
+  align-items: center;
+  font-size:16px;
+  color:#ffffff;
+}
+/* SNS와 패밀리사이트 그룹  */
+.footerGroup{
+  width:20%;
+	padding:0 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* SNS */
+.footerSNS{
+	display: flex;
+	justify-content: space-between;
+}
+.footerSNS img:hover{opacity:0.7;}
+/* 패밀사이트 */
+.footerFmaily > select{
+  width:100%;
+  padding:4px 8px;
+}
+
+/* 모달 팝업  */
+#modalWrap{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0, 0.7);
+}
+#modalWrap.active{
+  display:block;
+}
+.modal{
+  position:fixed;
+  width:350px;
+  padding:20px;
+  top:40%;
+  left:40%;
+  background:#ffffff;
+}
+.modal > h1{
+  margin:10px 0;
+  text-align: center;
+}
+.modal > p{
+  text-align:justify;
+}
+.btn{
+  width:100%;
+  padding:10px;
+  margin-top:20px;
+  background: #00C73C;
+  color:#ffffff;
+  border:0;
+  font-weight: bold;
+  cursor:pointer;
+}
+.btn:hover{background:rgba(0,199,60, 0.2); color:#00C73C;}
