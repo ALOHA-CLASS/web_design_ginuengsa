@@ -16,6 +16,16 @@ a{
   display:block;
 }
 
+/* 컬러가이드 */
+:root {
+  --main-color: #123123;
+  --sub-color: #eeeeee;
+  --back-color: #ffffff;
+  --font-color: #333333;
+}
+
+
+
 /********본문시작*********/
 /* 모든 컨텐츠를 감싸는 main */
 main {

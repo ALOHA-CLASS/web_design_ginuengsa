@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 제목</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <!-- ⭐jQuery 먼저 -->
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header>
+            <!-- 로고 -->
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- 가로 멀티 메뉴 -->
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">메인메뉴1</a>
+                        <ul class="sub-menu">
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴1</a>
+                        <ul class="sub-menu">
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴1</a>
+                        <ul class="sub-menu">
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴1</a>
+                        <ul class="sub-menu">
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                            <li><a href="">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 슬라이드 -->
+        <section id="slides">
+            <div class="slide-container">
+                <div class="slide"><img src="images/slide1.jpg" alt=""></div>
+                <div class="slide"><img src="images/slide2.jpg" alt=""></div>
+                <div class="slide"><img src="images/slide3.jpg" alt=""></div>
+            </div>
+        </section>
+        <!-- 컨텐츠 -->
+        <section id="contents">
+            <!-- 공지사항/갤러리 탭 -->
+            <div class="tab">
+                <div class="inner">
+                    <div class="tab-menu">
+                        <div class="menu-item active">
+                            <a href="#" id="btn-notice">공지사항</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" id="btn-gallery">갤러리</a>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <!-- 공지사항 -->
+                        <div class="content-item" id="content-notice">
+                            <table>
+                                <tr id="btn-modal">
+                                    <td width="300">------</td>
+                                    <td>2024.01.01</td>
+                                </tr>
+                                <tr>
+                                    <td width="300">------</td>
+                                    <td>2024.01.01</td>
+                                </tr>
+                                <tr>
+                                    <td width="300">------</td>
+                                    <td>2024.01.01</td>
+                                </tr>
+                                <tr>
+                                    <td width="300">------</td>
+                                    <td>2024.01.01</td>
+                                </tr>
+                            </table>
+                        </div> 
+                        <!-- 갤러리 -->
+                        <div class="content-item" id="content-gallery">
+                            <div class="gallery">
+                                <div class="item">
+                                    <a href=""><img src="images/gallery1.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href=""><img src="images/gallery2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href=""><img src="images/gallery3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 -->
+            <div>
+                <a href="" class="banner">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <!-- 바로가기 -->
+            <div>
+                <a href="" class="link">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-logo">
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <div class="copy">
+                <p>--------------------------</p>
+            </div>
+            <div class="sns">
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <div id="modal">
+        <div class="card">
+            <h1>레이어 팝업 제목</h1>
+            <p>
+                --------------------------
+            </p>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+</body>
+</html>
