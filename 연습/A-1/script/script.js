@@ -11,38 +11,38 @@ $(function() {
     })
 
     // 이미지 슬라이드 - 세로
-    // let index = 0;
-    // const speed = 500;
-    // const time = 3000;
-    // const $slide = $(".slide")
-    // const $container = $(".slide-container")
-    // const size = $slide.height();
-    // const count = $slide.length;
-    // $container.height(size * count)
-    
-    // setInterval(function() {
-    //     index = (index + 1) % count;
-    //     $container.animate({
-    //         top: -index * size
-    //     }, speed);
-    // }, time);
-
-    // 이미지 슬라이드 - 가로
     let index = 0;
     const speed = 500;
     const time = 3000;
     const $slide = $(".slide")
     const $container = $(".slide-container")
-    const size = $slide.width();
+    const size = $slide.height();
     const count = $slide.length;
-    $container.width(size * count)
+    $container.height(size * count)
     
     setInterval(function() {
         index = (index + 1) % count;
         $container.animate({
-            left: -index * size
+            top: -index * size
         }, speed);
     }, time);
+
+    // 이미지 슬라이드 - 가로
+    // let index = 0;
+    // const speed = 500;
+    // const time = 3000;
+    // const $slide = $(".slide")
+    // const $container = $(".slide-container")
+    // const size = $slide.width();
+    // const count = $slide.length;
+    // $container.width(size * count)
+    
+    // setInterval(function() {
+    //     index = (index + 1) % count;
+    //     $container.animate({
+    //         left: -index * size
+    //     }, speed);
+    // }, time);
     
 
     // 페이드 슬라이드
@@ -76,7 +76,7 @@ $(function() {
     })
 
     // 레이어 팝업
-    $("#btn-modal").on("click", function() {
+    $(".btn-modal").on("click", function() {
         $("#modal").show();
     });
 

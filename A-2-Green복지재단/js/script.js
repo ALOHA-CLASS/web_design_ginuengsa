@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // 서브메뉴 숨기고 시작.
-    $('.subMenu').hide();
+    // $('.subMenu').hide();
   // 마우스오버 메뉴
     $('nav').mouseover(function(){
       $('.subMenu').stop().slideDown(300);

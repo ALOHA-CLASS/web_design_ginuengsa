@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-1 JUST 쇼핑몰</title>
+    <title>A-2 Green 복지재단</title>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- script -->
@@ -21,48 +21,54 @@
                     <img src="images/logo.png" alt="">
                 </a>
             </div>
-            <!-- 가로 멀티 메뉴 -->
-            <nav>
+            <!-- 가로 100% 멀티 -->
+            <nav class="main">
                 <ul class="main-menu">
                     <li>
                         <a href="#">메인메뉴</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">메인메뉴</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">메인메뉴</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">메인메뉴</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
                     </li>
                 </ul>
             </nav>
+            <nav class="sub">
+                <div class="inner">
+                    <ul class="sub-menu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                    </ul>
+
+                </div>
+            </nav>
         </header>
+
         <!-- 슬라이드 -->
         <section id="slides">
             <div class="slide-container">
@@ -79,9 +85,6 @@
                     <div class="tab-menu">
                         <div class="menu-item active">
                             <a href="#" id="btn-notice">공지사항</a>
-                        </div>
-                        <div class="menu-item">
-                            <a href="#" id="btn-gallery">갤러리</a>
                         </div>
                     </div>
                     <div class="tab-content">
@@ -114,28 +117,31 @@
                                 </li>
                             </ul>
                         </div> 
-                        <!-- 갤러리 -->
-                        <div class="content-item" id="content-gallery">
-                            <div class="gallery">
-                                <div class="item">
-                                    <a href="#"><img src="images/g1.jpg" alt="갤러리 이미지1"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="images/g2.jpg" alt="갤러리 이미지1"></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="images/g3.jpg" alt="갤러리 이미지1"></a>
-                                </div>
-                            </div>
-                        </div> 
+                        
                     </div>
                 </div>
             </div>
             <!-- 배너 -->
             <div>
-                <a href="#" class="banner">
-                    <img src="images/banner.jpg" alt="배너 이미지">
-                </a>
+                <div class="tab-menu">
+                    <div class="menu-item">
+                        <a href="#" id="btn-gallery">갤러리</a>
+                    </div>
+                </div>
+                <!-- 갤러리 -->
+                <div class="content-item" id="content-gallery">
+                    <div class="gallery">
+                        <div class="item">
+                            <a href="#"><img src="images/g1.jpg" alt="갤러리 이미지1"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/g2.jpg" alt="갤러리 이미지1"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/g3.jpg" alt="갤러리 이미지1"></a>
+                        </div>
+                    </div>
+                </div> 
             </div>
             <!-- 바로가기 -->
             <div>
@@ -152,10 +158,13 @@
             <div class="copy">
                 <p>---------- Copyright ----------</p>
             </div>
-            <div class="sns">
-                <a href="#"><img src="images/sns1.jpg" alt="sns1"></a>
-                <a href="#"><img src="images/sns2.jpg" alt="sns2"></a>
-                <a href="#"><img src="images/sns3.jpg" alt="sns3"></a>
+            <div class="family">
+                <select name="family" id="family">
+                    <option value="#">패밀리 사이트</option>
+                    <option value="#">사이트 1</option>
+                    <option value="#">사이트 2</option>
+                    <option value="#">사이트 3</option>
+                </select>
             </div>
         </footer>
     </div>

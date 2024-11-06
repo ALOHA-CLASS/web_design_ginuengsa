@@ -20,6 +20,7 @@ body {
     /* border: 1px solid darkcyan; */
 }
 header {
+    position: relative;
     width: 100%;
     height: 100px;
     /* border: 1px solid darkcyan; */
@@ -53,8 +54,12 @@ header .logo a img {
 }
 /* 메뉴 */
 header nav {
-    position: relative;
-    top: 10%;
+    /* position: relative; */
+    /* top: 10%; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
     z-index: 10;
 }
 header nav .main-menu {
@@ -81,14 +86,39 @@ header nav .main-menu li a:hover {
 /* header nav .main-menu:hover .sub-menu {
     display: inherit;
 } */
-header nav .sub-menu { display: none;  }
-header nav .sub-menu > li {
-    background-color: white;
+
+header nav.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(40px * 4);
 }
-header nav .sub-menu > li a {
+
+header nav.sub .inner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--sub-color);
+}
+
+header nav.sub .sub-menu > li {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--sub-color);
+}
+header nav.sub .sub-menu > li a {
+    color: white; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     color: var(--main-color);
 }
-header nav .sub-menu > li a:hover {
+header nav.sub .sub-menu > li a:hover {
     background-color: var(--main-color);
     color: white;
 }
@@ -103,7 +133,7 @@ header nav .sub-menu > li a:hover {
     position: relative;
     display: flex;
     /* 세로 슬라이드 */
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .slide-container .slide {
     /* 페이드 슬라이드 */
@@ -151,25 +181,21 @@ header nav .sub-menu > li a:hover {
     height: calc(40px - 2px);
     line-height: calc(40px - 2px);
     text-align: center;
+    background-color: var(--main-color);
 }
 .tab-menu .menu-item a {
     display: inline-block;
     width: 100%;
     height: 100%;
-}
-.tab-menu .menu-item:hover,
-.tab-menu .menu-item.active {
-    background-color: var(--main-color);
-}
-.tab-menu .menu-item:hover a,
-.tab-menu .menu-item.active a {
     color: white;
 }
+
 .tab-content {
     /* border: 1px solid var(--main-color); */
     position: relative;
     top: -2px;
 }
+
 .tab-content .content-item {}
 .tab-content .content-item ul li a {
     display: flex;
@@ -201,8 +227,7 @@ header nav .sub-menu > li a:hover {
 .btn-modal { cursor: pointer; }
 /* 갤러리 */
 #content-gallery { 
-    display: none; 
-    
+    /* display: none;  */
 }
 .gallery {
     width: 100%;
@@ -246,16 +271,23 @@ footer .footer-logo a img {
 footer .copy { 
     text-align: center;
 }
-/* sns */
-footer .sns {
+/* family */
+footer .family {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     padding: 0 20px;
 }
-footer .sns a {}
-footer .sns a img {}
+
+footer .family select {
+    border-radius: 5px;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
 
 /* 레이어팝업 */
 #modal {
