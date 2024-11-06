@@ -25,7 +25,7 @@
             <nav>
                 <ul class="main-menu">
                     <li>
-                        <a href="#">메인메뉴1</a>
+                        <a href="#">메인메뉴</a>
                         <ul class="sub-menu">
                             <li><a href="">서브메뉴</a></li>
                             <li><a href="">서브메뉴</a></li>
@@ -34,7 +34,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">메인메뉴1</a>
+                        <a href="#">메인메뉴</a>
                         <ul class="sub-menu">
                             <li><a href="">서브메뉴</a></li>
                             <li><a href="">서브메뉴</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">메인메뉴1</a>
+                        <a href="#">메인메뉴</a>
                         <ul class="sub-menu">
                             <li><a href="">서브메뉴</a></li>
                             <li><a href="">서브메뉴</a></li>
@@ -52,7 +52,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">메인메뉴1</a>
+                        <a href="#">메인메뉴</a>
                         <ul class="sub-menu">
                             <li><a href="">서브메뉴</a></li>
                             <li><a href="">서브메뉴</a></li>
@@ -66,9 +66,9 @@
         <!-- 슬라이드 -->
         <section id="slides">
             <div class="slide-container">
-                <div class="slide"><img src="images/slide1.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide2.jpg" alt=""></div>
-                <div class="slide"><img src="images/slide3.jpg" alt=""></div>
+                <div class="slide"><a href="#"><img src="images/slide1.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="images/slide2.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="images/slide3.jpg" alt=""></a></div>
             </div>
         </section>
         <!-- 컨텐츠 -->
@@ -89,19 +89,19 @@
                         <div class="content-item" id="content-notice">
                             <table>
                                 <tr id="btn-modal">
-                                    <td width="300">------</td>
+                                    <td width="300">레이어 팝업 - 공지사항1</td>
                                     <td>2024.01.01</td>
                                 </tr>
                                 <tr>
-                                    <td width="300">------</td>
+                                    <td width="300">---------- 공지사항2</td>
                                     <td>2024.01.01</td>
                                 </tr>
                                 <tr>
-                                    <td width="300">------</td>
+                                    <td width="300">---------- 공지사항2</td>
                                     <td>2024.01.01</td>
                                 </tr>
                                 <tr>
-                                    <td width="300">------</td>
+                                    <td width="300">---------- 공지사항2</td>
                                     <td>2024.01.01</td>
                                 </tr>
                             </table>
@@ -110,13 +110,13 @@
                         <div class="content-item" id="content-gallery">
                             <div class="gallery">
                                 <div class="item">
-                                    <a href=""><img src="images/gallery1.jpg" alt=""></a>
+                                    <a href=""><img src="images/g1.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href=""><img src="images/gallery2.jpg" alt=""></a>
+                                    <a href=""><img src="images/g2.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href=""><img src="images/gallery3.jpg" alt=""></a>
+                                    <a href=""><img src="images/g3.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div> 
@@ -126,37 +126,43 @@
             <!-- 배너 -->
             <div>
                 <a href="" class="banner">
-                    <img src="" alt="">
+                    <img src="images/banner.jpg" alt="배너 이미지">
                 </a>
             </div>
             <!-- 바로가기 -->
             <div>
                 <a href="" class="link">
-                    <img src="" alt="">
+                    <img src="images/goto.jpg" alt="바로가기 이미지">
                 </a>
             </div>
         </section>
         <footer>
             <div class="footer-logo">
-                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="images/logo.png" alt="푸터 로고"></a>
             </div>
             <div class="copy">
-                <p>--------------------------</p>
+                <p>---------- Copyright ----------</p>
             </div>
             <div class="sns">
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="images/sns1.jpg" alt="sns1"></a>
+                <a href=""><img src="images/sns2.jpg" alt="sns2"></a>
+                <a href=""><img src="images/sns3.jpg" alt="sns3"></a>
             </div>
         </footer>
     </div>
-    <div id="modal">
-        <div class="card">
-            <h1>레이어 팝업 제목</h1>
-            <p>
-                --------------------------
-            </p>
-            <button class="close">닫기</button>
+    <div id="modal" class="close">
+        <div class="inner">
+            <div class="card">
+                <h1>레이어 팝업 제목</h1>
+                <p>
+                    -------------------------- <br>
+                    레이어 팝업 내용 입니다. <br>
+                    레이어 팝업 내용 입니다. <br>
+                    레이어 팝업 내용 입니다. <br>
+                    -------------------------- <br>
+                </p>
+                <button class="close">닫기</button>
+            </div>
         </div>
     </div>
 </body>
