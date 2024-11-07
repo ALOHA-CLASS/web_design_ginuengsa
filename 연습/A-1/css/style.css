@@ -63,9 +63,9 @@ header nav .main-menu {
     align-items: center;
 }
 header nav .main-menu li {
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     /* border: 1px solid red; */
 }

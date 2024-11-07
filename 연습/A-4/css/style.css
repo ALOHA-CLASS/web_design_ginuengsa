@@ -50,7 +50,8 @@ header .logo {}
 header .logo a {}
 header .logo a img {
     width: 200px;
-    height: 40px;
+    height: auto;
+    object-fit: contain;
 }
 /* 메뉴 */
 header nav {
@@ -141,7 +142,7 @@ header nav.sub .sub-menu > li a:hover {
 }
 .slide-container .slide {
     /* 페이드 슬라이드 */
-    /* position: absolute; */       
+    position: absolute;       
     width: 1200px;
     height: 300px;
 }
@@ -258,23 +259,33 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-/* 푸터로고 */
-footer .footer-logo {
-    padding: 0 20px;
-    filter: grayscale(100%);
+
+/* footer inner */
+footer .inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-footer .footer-logo a {
-    
+
+/* fnb */
+footer .fnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
 }
-footer .footer-logo a img {
-    width: 200px;
-    height: 40px;
-    
+footer .fnb a:hover {
+    color: var(--main-color);
+    font-weight: bold;
 }
+
 /* copyright */
 footer .copy { 
     text-align: center;
 }
+
 /* family */
 footer .family {
     display: flex;
@@ -290,7 +301,6 @@ footer .family select {
     cursor: pointer;
     padding: 5px 10px;
 }
-
 
 
 /* 레이어팝업 */
