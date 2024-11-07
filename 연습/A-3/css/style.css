@@ -49,7 +49,8 @@ header .logo {}
 header .logo a {}
 header .logo a img {
     width: 200px;
-    height: 40px;
+    height: auto;
+    object-fit: contain;
 }
 /* 메뉴 */
 header nav {
@@ -239,23 +240,34 @@ footer .footer-logo a {
 }
 footer .footer-logo a img {
     width: 200px;
-    height: 40px;
-    
+    height: auto;
+    object-fit: contain;
 }
-/* 카피 */
-footer .copy { 
-    text-align: center;
+footer .inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-/* sns */
-footer .sns {
+
+/* fnb */
+footer .fnb {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 0 20px;
+    column-gap: 40px;
 }
-footer .sns a {}
-footer .sns a img {}
+footer .fnb a:hover {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* copyright */
+footer .copy { 
+    text-align: center;
+}
+
 
 /* 레이어팝업 */
 #modal {
