@@ -1,14 +1,15 @@
 
 $(function() {
     // 메뉴 슬라이드
-    $(".main, .sub").on("mouseenter", function(){
-        // $(".sub-menu").stop().fadeIn()
-        $(".sub").stop().slideDown()
+    $(".main-menu li").on("mouseover", function(){
+        // $(this).find(".sub-menu").stop().fadeIn()
+        $(this).find(".sub-menu").stop().slideDown()
     })
-    $(".main, .sub").on("mouseleave", function(){
-        // $(".sub-menu").stop().fadeOut()
-        $(".sub").stop().slideUp()
+    $(".main-menu li").on("mouseout", function(){
+        // $(this).find(".sub-menu").stop().fadeOut()
+        $(this).find(".sub-menu").stop().slideUp()
     })
+
     // 이미지 슬라이드 - 세로
     // let index = 0;
     // const speed = 500;
