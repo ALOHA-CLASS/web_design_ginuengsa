@@ -178,8 +178,8 @@ header nav .sub-menu > li a:hover {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 40px;
-    padding: 40px;
-    height: 300px;
+    /* padding: 40px; */
+    /* height: 300px; */
 }
 .tab-menu {
     display: flex;
