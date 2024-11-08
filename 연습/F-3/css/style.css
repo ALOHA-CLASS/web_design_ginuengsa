@@ -292,7 +292,12 @@ header nav.sub .sub-menu > li a:hover {
     gap: calc( (100% - 300px) / 4 );
 }
 .gallery .item {}
-.gallery .item a {}
+.gallery .item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* 갤러리의 이미지에 마우스 오버(mouse over) 시 해당 객체의 투명도(Opacity)에 변화가 있어야 한다 */
 .gallery .item a:hover { opacity: 0.7; }
 .gallery .item a img {}

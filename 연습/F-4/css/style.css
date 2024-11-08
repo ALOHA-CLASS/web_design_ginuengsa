@@ -289,7 +289,12 @@ header nav.sub .sub-menu > li a:hover {
     gap: calc( (100% - 300px) / 4 );
 }
 .gallery .item {}
-.gallery .item a {}
+.gallery .item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .gallery .item a img {}
 
 

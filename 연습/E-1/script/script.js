@@ -65,18 +65,18 @@ $(function() {
     
 
     // 탭 기능
-    $("#btn-notice").on("click", function() {
-        $("#content-notice").show()
-        $("#content-gallery").hide()
-        $(".menu-item").removeClass("active")
-        $(this).parent().addClass("active")
-    })
-    $("#btn-gallery").on("click", function() {
-        $("#content-notice").hide()
-        $("#content-gallery").show()
-        $(".menu-item").removeClass("active")
-        $(this).parent().addClass("active")
-    })
+    // $("#btn-notice").on("click", function() {
+    //     $("#content-notice").show()
+    //     $("#content-gallery").hide()
+    //     $(".menu-item").removeClass("active")
+    //     $(this).parent().addClass("active")
+    // })
+    // $("#btn-gallery").on("click", function() {
+    //     $("#content-notice").hide()
+    //     $("#content-gallery").show()
+    //     $(".menu-item").removeClass("active")
+    //     $(this).parent().addClass("active")
+    // })
 
     // 레이어 팝업
     $(".btn-modal").on("click", function() {

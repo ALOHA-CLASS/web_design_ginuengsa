@@ -153,6 +153,7 @@ header nav .sub-menu > li a:hover {
     column-gap: 20px;
 }
 
+/* 배너 */
 .banner {
     height: 200px;
     display: flex;
@@ -254,7 +255,12 @@ header nav .sub-menu > li a:hover {
     gap: calc( (100% - 300px) / 4 );
 }
 .gallery .item {}
-.gallery .item a {}
+.gallery .item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .gallery .item a img {}
 /* 배너 */
 .banner {}
