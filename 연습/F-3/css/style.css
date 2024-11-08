@@ -3,8 +3,8 @@
 * { margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 a { text-decoration: none; color: var(--text-color); }
 :root {
-    --main-color: #0331aa;
-    --sub-color: #eeeeee;
+    --main-color: #0a9b97;
+    --sub-color: #f04467;
     --back-color: #ffffff;
     --text-color: #666666;
     --container-width: 1340px;
@@ -23,6 +23,7 @@ body {
     /* border: 1px solid darkcyan; */
 }
 header {
+    position: relative;
     width: 100%;
     height: 100px;
     /* border: 1px solid darkcyan; */
@@ -57,14 +58,21 @@ header .logo a img {
 }
 /* 메뉴 */
 header nav {
-    position: relative;
-    top: 10%;
+    /* position: relative; */
+    /* top: 10%; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
     z-index: 10;
 }
 header nav .main-menu {
-    display: flex;
+    /* display: flex;
     justify-self: center;
-    align-items: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: end;
 }
 header nav .main-menu li {
     width: 200px;
@@ -85,26 +93,51 @@ header nav .main-menu li a:hover {
 /* header nav .main-menu:hover .sub-menu {
     display: inherit;
 } */
-header nav .sub-menu { display: none;  }
-header nav .sub-menu > li {
-    background-color: white;
+
+header nav.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(50px * 4);
 }
-header nav .sub-menu > li a {
-    color: var(--main-color);
+
+header nav.sub .inner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--sub-color);
 }
-header nav .sub-menu > li a:hover {
+
+header nav.sub .sub-menu > li {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--sub-color);
+}
+header nav.sub .sub-menu > li a {
+    color: white; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* color: var(--main-color); */
+}
+header nav.sub .sub-menu > li a:hover {
     background-color: var(--main-color);
     color: white;
 }
 
-
 /* 슬라이드 */
 #slides {
-    width: var(--slide-width);
     height: 350px;
     overflow: hidden;
 }
 .slide-container {
+    /* 가로 슬라이드 */
+    width: calc( var(--slide-width) * 3 );
     position: relative;
     display: flex;
     /* 세로 슬라이드 */
@@ -112,8 +145,9 @@ header nav .sub-menu > li a:hover {
 }
 .slide-container .slide {
     /* 페이드 슬라이드 */
-    position: absolute;       
-    width: var(--slide-width);
+    /* position: absolute;        */
+    /* width: var(--slide-width); */
+    width: 100vw;
     height: 350px;
 }
 .slide-container .slide a {
@@ -160,6 +194,7 @@ header nav .sub-menu > li a:hover {
     align-items: center;
     padding: 20px 40px;
     background-color: var(--sub-color);
+    color: var(--back-color);
 }
 
 .banner .inner {
@@ -224,6 +259,9 @@ header nav .sub-menu > li a:hover {
 .tab-content .content-item ul li:nth-of-type(odd){
     background-color: var(--sub-color);
 }
+.tab-content .content-item ul li:nth-of-type(odd) a{
+    color: var(--back-color);
+}
 .tab-content .content-item ul li:nth-of-type(even){
     background-color: var(--back-color);
 }
@@ -255,6 +293,8 @@ header nav .sub-menu > li a:hover {
 }
 .gallery .item {}
 .gallery .item a {}
+/* 갤러리의 이미지에 마우스 오버(mouse over) 시 해당 객체의 투명도(Opacity)에 변화가 있어야 한다 */
+.gallery .item a:hover { opacity: 0.7; }
 .gallery .item a img {}
 /* 배너 */
 .banner {}

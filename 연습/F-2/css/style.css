@@ -8,7 +8,7 @@ a { text-decoration: none; color: var(--text-color); }
     --back-color: #ffffff;
     --text-color: #333333;
     --container-width: 1340px;
-    --slide-width: 100%;
+    --slide-width: 100vw;
 }
 body {
     background-color: var(--back-color);
@@ -51,7 +51,7 @@ footer {
 header .logo {}
 header .logo a {}
 header .logo a img {
-    width: 200px;
+    /* width: 200px; */
     height: auto;
     object-fit: contain;
 }
