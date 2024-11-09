@@ -3,14 +3,10 @@
 ### 👩‍🏫 공부하기
 [공부하기](https://wwwaloha.oopy.io/4998699a-2c61-4431-9c41-1859a7fca5cb)
 
-<br>
-
 ---
 
 ### 📂 완성
 [완성 사이트 보기](https://aloha-class.github.io/web_design_ginuengsa)
-
-<br>
 
 ---
 
