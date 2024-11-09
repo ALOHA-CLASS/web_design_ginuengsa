@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-3 남도맛기행 축제</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <!-- ⭐jQuery 먼저 -->
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header>
+            <!-- 로고 -->
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </div>
+             <!-- 세로 기본 메뉴 -->
+             <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">메인메뉴</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메인메뉴</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="inner">
+            <!-- 슬라이드 -->
+            <section id="slides">
+                <div class="slide-container">
+                    <div class="slide"><a href="#"><img src="images/slide1.jpg" alt=""></a></div>
+                    <div class="slide"><a href="#"><img src="images/slide2.jpg" alt=""></a></div>
+                    <div class="slide"><a href="#"><img src="images/slide3.jpg" alt=""></a></div>
+                </div>
+            </section>
+            <!-- 컨텐츠 -->
+            <section id="contents">
+                <!-- 공지사항 -->
+                <div>
+                    <div class="inner">
+                        <div class="tab-menu">
+                            <div class="menu-item active">
+                                <a href="#" id="btn-notice">공지사항</a>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <!-- 공지사항 -->
+                            <div class="content-item" id="content-notice">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="btn-modal">
+                                            <span>레이어 팝업 - 공지사항1</span>
+                                            <span>2024.01.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>----------  공지사항2</span>
+                                            <span>2024.01.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>----------  공지사항3</span>
+                                            <span>2024.01.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>----------  공지사항4</span>
+                                            <span>2024.01.01</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- 갤러리 -->
+                <div>
+                    <div class="tab-menu">
+                        <div class="menu-item">
+                            <a href="#" id="btn-gallery">갤러리</a>
+                        </div>
+                    </div>
+                    <!-- 갤러리 -->
+                    <div class="content-item" id="content-gallery">
+                        <div class="gallery">
+                            <div class="item">
+                                <a href="#"><img src="images/g1.jpg" alt="갤러리 이미지1"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="images/g2.jpg" alt="갤러리 이미지1"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="images/g3.jpg" alt="갤러리 이미지1"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                <!-- 배너 -->
+                <div>
+                    <a href="#" class="banner">
+                        <img src="images/banner.jpg" alt="배너 이미지">
+                    </a>
+                </div>
+                
+            </section>
+            <!-- 푸터 -->
+            <footer>
+                <div class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt="푸터 로고"></a>
+                </div>
+                <div class="inner">
+                    <nav class="fnb">
+                        <a href="#">하단 메뉴1</a>
+                        <a href="#">하단 메뉴2</a>
+                        <a href="#">하단 메뉴3</a>
+                    </nav>
+                    <div class="copy">
+                        <p>Copyright ⓒ ALOHA CLASS. All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer> 
+
+        </div>
+    </div>
+    <!-- 레이어 팝업 -->
+    <div id="modal" class="close">
+        <div class="inner">
+            <div class="card">
+                <h1>레이어 팝업 제목</h1>
+                <p>
+                    -------------------------- <br>
+                    레이어 팝업 내용 입니다. <br>
+                    레이어 팝업 내용 입니다. <br>
+                    레이어 팝업 내용 입니다. <br>
+                    -------------------------- <br>
+                </p>
+                <button class="close">닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
