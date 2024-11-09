@@ -10,6 +10,7 @@ $(function() {
         $(".sub").stop().slideUp()
     })
 
+    /* ------------------- 무한 반복 ❌ ------------------- */
     // 이미지 슬라이드 - 세로
     // let index = 0;
     // const speed = 500;
@@ -28,7 +29,46 @@ $(function() {
     // }, time);
 
     // 이미지 슬라이드 - 가로
-    let index = 0;
+    // let index = 0;
+    // const speed = 500;
+    // const time = 3000;
+    // const $slide = $(".slide")
+    // const $container = $(".slide-container")
+    // const size = $slide.width();
+    // const count = $slide.length;
+    // $container.width(size * count)
+    
+    // setInterval(function() {
+    //     index = (index + 1) % count;
+    //     $container.animate({
+    //         left: -index * size
+    //     }, speed);
+    // }, time);
+
+        
+    /* ------------------- 무한 반복 💛 ------------------- */
+    
+    // 이미지 슬라이드 - 세로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
+    // const speed = 500;
+    // const time = 3000;
+    // const $slide = $(".slide")
+    // const $container = $(".slide-container")
+    // const size = $slide.height();
+    // const count = $slide.length;
+    // $container.height(size * count)
+    
+    // setInterval(function() {
+    //     $container.animate({
+    //         top: -size
+    //     }, speed, function() {
+    //         $container.css('top','0')
+    //         $container.append($(".slide").first());
+    //     });
+    // }, time);
+
+    // 이미지 슬라이드 - 가로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     const speed = 500;
     const time = 3000;
     const $slide = $(".slide")
@@ -38,10 +78,12 @@ $(function() {
     $container.width(size * count)
     
     setInterval(function() {
-        index = (index + 1) % count;
         $container.animate({
-            left: -index * size
-        }, speed);
+            left: -size
+        }, speed, function() {
+            $container.css('left','0')
+            $container.append($(".slide").first());
+        } );
     }, time);
     
 

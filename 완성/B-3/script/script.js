@@ -1,13 +1,13 @@
 
 $(function() {
     // 메뉴 슬라이드
-    $(".main-menu").on("mouseover", function(){
-        // $(".sub-menu").stop().fadeIn()
-        $(".sub-menu").stop().slideDown()
+    $(".main-menu li").on("mouseover", function(){
+        // $(this).find(".sub-menu").stop().fadeIn()
+        $(this).find(".sub-menu").stop().slideDown()
     })
-    $(".main-menu").on("mouseout", function(){
-        // $(".sub-menu").stop().fadeOut()
-        $(".sub-menu").stop().slideUp()
+    $(".main-menu li").on("mouseout", function(){
+        // $(this).find(".sub-menu").stop().fadeOut()
+        $(this).find(".sub-menu").stop().slideUp()
     })
 
     /* ------------------- 무한 반복 ❌ ------------------- */
@@ -85,6 +85,7 @@ $(function() {
     //         $container.append($(".slide").first());
     //     } );
     // }, time);
+    
 
     // 페이드 슬라이드
     // let index = 0;
@@ -98,7 +99,6 @@ $(function() {
     //     index = (index + 1) % count;
     //     $slide.fadeOut(speed)
     //     $slide.eq(index).fadeIn(speed)
-    //     $slide.style("z-index", "-1")
     // }, time);
     
 

@@ -1,13 +1,13 @@
 
 $(function() {
     // 메뉴 슬라이드
-    $(".main-menu").on("mouseover", function(){
-        // $(".sub-menu").stop().fadeIn()
-        $(".sub-menu").stop().slideDown()
+    $(".main, .sub").on("mouseenter", function(){
+        // $(".sub").stop().fadeIn()
+        $(".sub").stop().slideDown()
     })
-    $(".main-menu").on("mouseout", function(){
-        // $(".sub-menu").stop().fadeOut()
-        $(".sub-menu").stop().slideUp()
+    $(".main, .sub").on("mouseleave", function(){
+        // $(".sub").stop().fadeOut()
+        $(".sub").stop().slideUp()
     })
 
     /* ------------------- 무한 반복 ❌ ------------------- */
@@ -85,6 +85,7 @@ $(function() {
     //         $container.append($(".slide").first());
     //     } );
     // }, time);
+    
 
     // 페이드 슬라이드
     // let index = 0;
@@ -98,23 +99,22 @@ $(function() {
     //     index = (index + 1) % count;
     //     $slide.fadeOut(speed)
     //     $slide.eq(index).fadeIn(speed)
-    //     $slide.style("z-index", "-1")
     // }, time);
     
 
     // 탭 기능
-    $("#btn-notice").on("click", function() {
-        $("#content-notice").show()
-        $("#content-gallery").hide()
-        $(".menu-item").removeClass("active")
-        $(this).parent().addClass("active")
-    })
-    $("#btn-gallery").on("click", function() {
-        $("#content-notice").hide()
-        $("#content-gallery").show()
-        $(".menu-item").removeClass("active")
-        $(this).parent().addClass("active")
-    })
+    // $("#btn-notice").on("click", function() {
+    //     $("#content-notice").show()
+    //     $("#content-gallery").hide()
+    //     $(".menu-item").removeClass("active")
+    //     $(this).parent().addClass("active")
+    // })
+    // $("#btn-gallery").on("click", function() {
+    //     $("#content-notice").hide()
+    //     $("#content-gallery").show()
+    //     $(".menu-item").removeClass("active")
+    //     $(this).parent().addClass("active")
+    // })
 
     // 레이어 팝업
     $(".btn-modal").on("click", function() {
