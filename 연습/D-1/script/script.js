@@ -1,17 +1,17 @@
 
 $(function() {
     // 메뉴 슬라이드
-    $(".main, .sub").on("mouseenter", function(){
-        // $(".sub").stop().fadeIn()
-        $(".sub").stop().slideDown()
+    $(".main-menu li").on("mouseover", function(){
+        // $(this).find(".sub-menu").stop().fadeIn()
+        $(this).find(".sub-menu").stop().slideDown()
     })
-    $(".main, .sub").on("mouseleave", function(){
-        // $(".sub").stop().fadeOut()
-        $(".sub").stop().slideUp()
+    $(".main-menu li").on("mouseout", function(){
+        // $(this).find(".sub-menu").stop().fadeOut()
+        $(this).find(".sub-menu").stop().slideUp()
     })
-    
-    // 이미지 슬라이드 - 세로
-    let index = 0;
+
+    // 이미지 슬라이드 - 세로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     const speed = 500;
     const time = 3000;
     const $slide = $(".slide")
@@ -21,14 +21,16 @@ $(function() {
     $container.height(size * count)
     
     setInterval(function() {
-        index = (index + 1) % count;
         $container.animate({
-            top: -index * size
-        }, speed);
+            top: -size
+        }, speed, function() {
+            $container.css('top','0')
+            $container.append($(".slide").first());
+        });
     }, time);
 
-    // 이미지 슬라이드 - 가로
-    // let index = 0;
+    // 이미지 슬라이드 - 가로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     // const speed = 500;
     // const time = 3000;
     // const $slide = $(".slide")
@@ -38,10 +40,12 @@ $(function() {
     // $container.width(size * count)
     
     // setInterval(function() {
-    //     index = (index + 1) % count;
     //     $container.animate({
-    //         left: -index * size
-    //     }, speed);
+    //         left: -size
+    //     }, speed, function() {
+    //         $container.css('left','0')
+    //         $container.append($(".slide").first());
+    //     } );
     // }, time);
     
 
