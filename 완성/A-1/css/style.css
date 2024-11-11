@@ -7,6 +7,8 @@ a { text-decoration: none; color: var(--text-color); }
     --sub-color: #eeeeee;
     --back-color: #ffffff;
     --text-color: #333333;
+    --slide-width: 1200px;
+    --slide-height: 300px;
 }
 body {
     background-color: var(--back-color);
@@ -27,15 +29,10 @@ header {
     justify-content: space-between;
     padding: 0 20px;
 }
-section {
-    width: 100%;
-}
+section { width: 100%; }
 #slides { height: 300px; }
 #contents { height: 200px; }
-footer {
-    width: 100%;
-    height: 100px;
-}
+footer { width: 100%; height: 100px; }
 
 /* 💛#################### 헤더 ####################💛 */
 /* 로고 */
@@ -83,8 +80,8 @@ header nav .sub-menu > li a:hover {
 
 /* 💛#################### 슬라이드 ####################💛 */
 #slides {
-    width: 1200px;
-    height: 300px;
+    width: var(--slide-width);
+    height: var(--slide-height);
     overflow: hidden;
 }
 .slide-container {
@@ -96,11 +93,11 @@ header nav .sub-menu > li a:hover {
 .slide-container .slide {
     /* 페이드 슬라이드 */
     /* position: absolute; */       
-    width: 1200px;
-    height: 300px;
+    width: var(--slide-width);
+    height: var(--slide-height);
 }
 .slide-container .slide img {
-    width: 1200px;
+    width: var(--slide-width);
     height: 100%;
 }
 
