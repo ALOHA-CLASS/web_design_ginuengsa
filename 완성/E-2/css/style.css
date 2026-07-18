@@ -192,10 +192,7 @@ header nav .sub-menu > li a:hover {
     filter: brightness(90%);
 }
 
-.tab-content .content-item table td {
-    padding: 0 10px;
-    box-sizing: border-box;
-}
+
 
 
 /* 공지사항 */
