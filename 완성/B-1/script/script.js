@@ -101,7 +101,7 @@ $(function() {
     //     index = (index + 1) % count;
     //     $slide.fadeOut(speed)
     //     $slide.eq(index).fadeIn(speed)
-    //     $slide.style("z-index", "-1")
+    //     $slide.css("z-index", "-1")
     // }, time);
     
 
