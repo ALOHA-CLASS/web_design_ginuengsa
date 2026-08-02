@@ -7,17 +7,13 @@ a { text-decoration: none; color: var(--text-color); }
     --sub-color: #eeeeee;
     --back-color: #ffffff;
     --text-color: #333333;
-    --container-width: 100vw;
-    --contianer-height: 100vh;
+    --container-width: 100%;
     --slide-width: calc(100vw - 200px - 230px);
     --slide-height: 400px;
 }
 body {
     background-color: var(--back-color);
     color: var(--text-color);
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 }
 
 /* 레이아웃 */
@@ -26,7 +22,7 @@ body {
     width: var(--container-width);
     margin: auto;
     display: grid;
-    grid-template-columns: 200px calc(100vw - 200px);
+    grid-template-columns: 200px 1fr;
 }
 header {
     background-color: var(--main-color);
@@ -37,11 +33,7 @@ header {
     row-gap: 50px;
     padding: 0 20px;
 }
-section {
-    /* width: 100%; */
-    /* border: 1px solid darkcyan; */
-    /* background-color: cornflowerblue; */
-}
+section { }
 #slides {  }
 #contents {
     position: relative;
@@ -118,12 +110,12 @@ header .spot a {
 
 header .spot a:not(:first-of-type)::before {
     position: absolute;
+    top: 2px;
     left: -10px;
     content: "";
     display: inline-block;
     width: 2px;
-    height: 18px;
-    border: 1px solid 2px;
+    height: 16px;
     background-color: var(--back-color);
 }
 
@@ -189,8 +181,8 @@ header .spot a:not(:first-of-type)::before {
     /* border: 1px solid var(--main-color); */
     border-bottom-width: 0;
     width: 100px;
-    height: calc(40px - 2px);
-    line-height: calc(40px - 2px);
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     background-color: var(--main-color);
 }
@@ -241,9 +233,8 @@ header .spot a:not(:first-of-type)::before {
     width: 100%;
     height: 160px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: calc( (100% - 300px) / 4 );
 }
 .gallery .item {}
 .gallery .item a {
