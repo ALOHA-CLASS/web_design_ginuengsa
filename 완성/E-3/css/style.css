@@ -285,7 +285,8 @@ footer .footer-logo a img {
 }
 /* copyright */
 footer .copy { 
-    text-align: center;
+    width: 100%;
+    padding: 0 20px;
 }
 /* sns */
 footer .sns {
