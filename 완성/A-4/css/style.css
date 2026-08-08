@@ -104,8 +104,6 @@ header nav.sub .sub-menu > li a:hover {
 .slide-container {
     position: relative;
     display: flex;
-    /* 세로 슬라이드 */
-    /* flex-direction: column; */
 }
 .slide-container .slide {
     /* 페이드 슬라이드 */
@@ -190,8 +188,8 @@ footer {
 }
 /* footer inner */
 footer .inner {
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

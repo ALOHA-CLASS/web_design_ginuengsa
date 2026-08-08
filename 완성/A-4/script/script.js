@@ -3,11 +3,9 @@ $(function() {
     /* ------------------- 💛메뉴 슬라이드💛 ------------------- */
     /* ------------------- ↔ 가로 100% 멀티   ------------------- */
     $(".main, .sub").on("mouseenter", function(){
-        // $(".sub").stop().fadeIn()
         $(".sub").stop().slideDown()
     })
     $(".main, .sub").on("mouseleave", function(){
-        // $(".sub").stop().fadeOut()
         $(".sub").stop().slideUp()
     })
     /* ------------------- 💛이미지 슬라이드💛 ------------------- */
@@ -25,11 +23,7 @@ $(function() {
     }, time);
     /* ------------------- 💛 레이어 팝업 💛 ------------------- */
     $(".btn-modal").on("click", function() {
-        $("#modal").show();
-    });
-
-    $(".close").on("click", function() {
-        $("#modal").hide();
+        $("#modal").toggle();
     });
 
 })

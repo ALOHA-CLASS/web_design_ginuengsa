@@ -48,8 +48,6 @@ footer {
 
 
 /* 로고 */
-header .logo {}
-header .logo a {}
 header .logo a img {
     width: 200px;
     height: auto;
@@ -130,21 +128,14 @@ header .spot a:not(:first-of-type)::before {
     overflow: hidden;
 }
 .slide-container {
-    /* 가로 슬라이드 */
-    /* width: calc( var(--slide-width) * 3 ); */
     position: relative;
     display: flex;
     /* 세로 슬라이드 */
     flex-direction: column;
 }
 .slide-container .slide {
-    /* 페이드 슬라이드 */
-    /* position: absolute;        */
     width: var(--slide-width);
     height: var(--slide-height);
-}
-.slide-container .slide a {
-    
 }
 .slide-container .slide img {
     width: var(--slide-width);
@@ -183,7 +174,6 @@ header .spot a:not(:first-of-type)::before {
     height: 40px;
 }
 .tab-menu .menu-item {
-    /* border: 1px solid var(--main-color); */
     border-bottom-width: 0;
     width: 100px;
     height: 40px;
@@ -204,11 +194,9 @@ header .spot a:not(:first-of-type)::before {
     color: white;
 }
 .tab-content {
-    /* border: 1px solid var(--main-color); */
     position: relative;
     top: -2px;
 }
-.tab-content .content-item {}
 .tab-content .content-item ul li a {
     display: flex;
     height: 40px;
@@ -231,12 +219,10 @@ header .spot a:not(:first-of-type)::before {
 
 
 /* 공지사항 */
-#content-notice {}
 .btn-modal { cursor: pointer; }
 /* 갤러리 */
 #content-gallery { 
-    display: none; 
-    
+    display: none;    
 }
 .gallery {
     width: 100%;
@@ -245,14 +231,12 @@ header .spot a:not(:first-of-type)::before {
     justify-content: space-evenly;
     align-items: center;
 }
-.gallery .item {}
 .gallery .item a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.gallery .item a img {}
 
 
 
@@ -285,29 +269,13 @@ header .spot a:not(:first-of-type)::before {
 .link nav a:hover {
     transform: translateY(-10px);
     transition: all 0.3s;
-}
-
-
-
-
-
-
-
-
-
-/* 푸터 */
+}/* 푸터 */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 /* 푸터로고 */
-footer .footer-logo {
-    /* padding: 0 20px; */
-}
-footer .footer-logo a {
-    
-}
 footer .footer-logo a img {
     width: 200px;
     height: auto;
@@ -326,7 +294,6 @@ footer .sns {
     gap: 10px;
     padding: 0 20px;
 }
-footer .sns a {}
 footer .sns a img {
     width: 40px;
     height: 40px;

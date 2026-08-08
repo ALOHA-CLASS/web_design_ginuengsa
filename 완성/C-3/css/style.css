@@ -48,8 +48,6 @@ header {
 
 
 /* 로고 */
-header .logo {}
-header .logo a {}
 header .logo a img {
     width: 200px;
     height: auto;
@@ -112,17 +110,10 @@ header nav .sub-menu > li a:hover {
 .slide-container {
     position: relative;
     display: flex;
-    /* 세로 슬라이드 */
-    /* flex-direction: column; */
 }
 .slide-container .slide {
-    /* 페이드 슬라이드 */
-    /* position: absolute;        */
     width: var(--slide-width);
     height: var(--slide-height);
-}
-.slide-container .slide a {
-    
 }
 .slide-container .slide img {
     width: var(--slide-width);
@@ -138,19 +129,12 @@ header nav .sub-menu > li a:hover {
     column-gap: 10px;
 }
 /* 공지/갤러리 탭 */
-.tab {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 200px; */
-}
 .tab-menu {
     display: flex;
     align-items: center;
     height: 40px;
 }
 .tab-menu .menu-item {
-    /* border: 1px solid var(--main-color); */
     border-bottom-width: 0;
     width: 100px;
     height: 40px;
@@ -166,12 +150,10 @@ header nav .sub-menu > li a:hover {
 }
 
 .tab-content {
-    /* border: 1px solid var(--main-color); */
     position: relative;
     top: -2px;
 }
 
-.tab-content .content-item {}
 .tab-content .content-item ul li a {
     display: flex;
     height: 40px;
@@ -196,13 +178,9 @@ header nav .sub-menu > li a:hover {
 
 
 /* 공지사항 */
-#content-notice {}
 .btn-modal { cursor: pointer; }
 
 /* 갤러리 */
-#content-gallery { 
-    /* display: none;  */
-}
 .gallery {
     width: 100%;
     height: 160px;
@@ -211,9 +189,6 @@ header nav .sub-menu > li a:hover {
     align-items: center;
     gap: calc( (100% - 300px) / 4 );
 }
-.gallery .item {}
-.gallery .item a {}
-.gallery .item a img {}
 
 /* 배너 */
 .banner {
@@ -276,9 +251,6 @@ footer .footer-logo {
     padding: 0 20px;
     filter: grayscale(100%);
 }
-footer .footer-logo a {
-    
-}
 footer .footer-logo a img {
     width: 200px;
     height: auto;
@@ -287,8 +259,8 @@ footer .footer-logo a img {
 
 /* footer inner */
 footer .inner {
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
