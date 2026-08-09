@@ -2,11 +2,9 @@ $(function() {
     /* ------------------- 💛메뉴 슬라이드💛 ------------------- */
     /* ------------------- ↔ 가로 멀티        ------------------- */
     $(".main-menu").on("mouseover", function(){
-        // $(".sub-menu").stop().fadeIn()
         $(".sub-menu").stop().slideDown()
     })
     $(".main-menu").on("mouseout", function(){
-        // $(".sub-menu").stop().fadeOut()
         $(".sub-menu").stop().slideUp()
     })
     /* ------------------- 💛이미지 슬라이드💛 ------------------- */
