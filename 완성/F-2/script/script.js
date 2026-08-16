@@ -11,7 +11,7 @@ $(function() {
     // 페이드 슬라이드
     let index = 0;
     const speed = 500;
-    const time = 3000;
+    const time = 2000;
     const $slide = $(".slide")
     const count = $(".slide").length;
     $slide.not(":first").hide()

@@ -15,7 +15,7 @@ $(function() {
     // 이미지 슬라이드 - 세로 (💛무한반복) 
     // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     const speed = 500;
-    const time = 3000;
+    const time = 2000;
     const $slide = $(".slide")
     const $container = $(".slide-container")
     const size = $slide.height();
@@ -37,7 +37,7 @@ $(function() {
     // 페이드 슬라이드
     // let index = 0;
     // const speed = 500;
-    // const time = 3000;
+    // const time = 2000;
     // const $slide = $(".slide")
     // const count = $(".slide").length;
     // $slide.not(":first").hide()

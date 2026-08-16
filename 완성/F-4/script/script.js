@@ -8,10 +8,10 @@ $(function() {
         $(".sub").stop().slideUp()
     })
     
-    // 이미지 슬라이드 - 세로
-    let index = 0;
+    // 이미지 슬라이드 - 세로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     const speed = 500;
-    const time = 3000;
+    const time = 2000;
     const $slide = $(".slide")
     const $container = $(".slide-container")
     const size = $slide.height();
@@ -19,10 +19,12 @@ $(function() {
     $container.height(size * count)
     
     setInterval(function() {
-        index = (index + 1) % count;
         $container.animate({
-            top: -index * size
-        }, speed);
+            top: -size
+        }, speed, function() {
+            $container.css('top','0')
+            $container.append($(".slide").first());
+        });
     }, time);
 
     // 레이어 팝업

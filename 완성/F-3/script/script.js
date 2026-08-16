@@ -8,10 +8,10 @@ $(function() {
         $(".sub").stop().slideUp()
     })
 
-    // 이미지 슬라이드 - 가로
-    let index = 0;
+    // 이미지 슬라이드 - 가로 (💛무한반복) 
+    // * 마지막 이미지가 슬라이드 되면 다시 첫 번째 이미지가 슬라이드 되는 방식
     const speed = 500;
-    const time = 3000;
+    const time = 2000;
     const $slide = $(".slide")
     const $container = $(".slide-container")
     const size = $slide.width();
@@ -19,10 +19,12 @@ $(function() {
     $container.width(size * count)
     
     setInterval(function() {
-        index = (index + 1) % count;
         $container.animate({
-            left: -index * size
-        }, speed);
+            left: -size
+        }, speed, function() {
+            $container.css('left','0')
+            $container.append($(".slide").first());
+        } );
     }, time);
 
     // 탭 기능

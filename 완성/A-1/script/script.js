@@ -10,7 +10,7 @@ $(function() {
     /* ------------------- 💛이미지 슬라이드💛 ------------------- */
     /* ------------------- ↕ 세로 슬라이드      ------------------- */
     const speed = 500;
-    const time = 3000;
+    const time = 2000;
     const $slide = $(".slide")
     const $container = $(".slide-container")
     const size = $slide.height();
