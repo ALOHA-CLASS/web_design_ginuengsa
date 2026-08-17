@@ -42,7 +42,7 @@ section { }
 
 #contents > .inner {
     display: grid;
-    grid-template-columns: calc(100vw - 200px - 230px) 230px;
+    grid-template-columns: 1fr 230px;
     grid-template-rows: 400px;
 }
 
