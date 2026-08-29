@@ -10,7 +10,7 @@ a { text-decoration: none; color: var(--text-color); }
     --container-width: 100vw;
     --contianer-height: 100vh;
     --slide-width: calc(100vw - 600px);
-    --slide-height: calc(100vh - 120px);
+    --slide-height: calc(100vh - 100px);
 }
 body {
     background-color: var(--back-color);
