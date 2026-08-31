@@ -24,7 +24,7 @@ body {
     /* height: var(--contianer-height); */
     margin: auto;
     display: grid;
-    grid-template-columns: 200px 400px calc(100vw - 600px);
+    grid-template-columns: 200px 400px 1fr;
     grid-template-rows: calc(100vh - 100px);
 }
 header {

@@ -22,7 +22,7 @@ body {
   width: var(--content-width);
   margin: auto;
   display: grid;
-  grid-template-columns: 200px 400px calc(100vw - 600px);
+  grid-template-columns: 200px 400px 1fr;
   grid-template-rows: calc(100vh - 120px);
 }
 header {
