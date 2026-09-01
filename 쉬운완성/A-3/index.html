@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>A-3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script/jquery-1.12.3.js"></script>
+  <script src="script/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="로고"></a>
+      </div>
+      <!-- 가로 기본메뉴 -->
+      <nav>
+        <ul class="main-menu">
+          <li><a href="#">메인메뉴</a>
+            <ul class="sub-menu">
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+            </ul>
+          </li>
+          <li><a href="#">메인메뉴</a>
+            <ul class="sub-menu">
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+            </ul>
+          </li>
+          <li><a href="#">메인메뉴</a>
+            <ul class="sub-menu">
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+            </ul>
+          </li>
+          <li><a href="#">메인메뉴</a>
+            <ul class="sub-menu">
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+              <li><a href="#">서브메뉴</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 슬라이드 -->
+    <section id="slides">
+      <div class="slide-container">
+        <div class="slide"><a href="#"><img src="images/slide1.jpg" alt=""></a></div>
+        <div class="slide"><a href="#"><img src="images/slide2.jpg" alt=""></a></div>
+        <div class="slide"><a href="#"><img src="images/slide3.jpg" alt=""></a></div>
+      </div>
+    </section>
+    <!-- 컨텐츠 -->
+    <section id="contents">
+      <!-- 탭(공지/갤러리) -->
+      <div class="tab">
+        <div class="tab-menu">
+          <div class="menu-item active"><a href="#">공지사항</a></div>
+          <div class="menu-item"><a href="#">갤러리</a></div>
+        </div>
+        <div class="tab-content">
+          <div class="content-item">
+            <ul>
+              <li><a href="#" class="btn-modal"><span>레이어 팝업 - 공지사항1</span><span>2024.01.01</span></a></li>
+              <li><a href="#"><span>공지사항2</span><span>2024.01.01</span></a></li>
+              <li><a href="#"><span>공지사항3</span><span>2024.01.01</span></a></li>
+              <li><a href="#"><span>공지사항4</span><span>2024.01.01</span></a></li>
+            </ul>
+          </div>
+          <div class="content-item" id="gallery">
+            <div class="gallery">
+              <div class="item"><a href="#"><img src="images/g1.jpg" alt="갤러리1"></a></div>
+              <div class="item"><a href="#"><img src="images/g2.jpg" alt="갤러리2"></a></div>
+              <div class="item"><a href="#"><img src="images/g3.jpg" alt="갤러리3"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 배너 -->
+      <div>
+        <a href="#" class="banner"><img src="images/banner.jpg" alt="배너"></a>
+      </div>
+      <!-- 바로가기 -->
+      <div>
+        <a href="#" class="link"><img src="images/goto.jpg" alt="바로가기"></a>
+      </div>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+      <div class="footer-logo">
+        <a href="#"><img src="images/logo.png" alt="푸터 로고"></a>
+      </div>
+      <div class="copy">
+        <p>Copyright ⓒ ALOHA CLASS. All Rights Reserved</p>
+      </div>
+      <div class="sns">
+        <a href="#"><img src="images/sns1.jpg" alt="sns1"></a>
+        <a href="#"><img src="images/sns2.jpg" alt="sns2"></a>
+        <a href="#"><img src="images/sns3.jpg" alt="sns3"></a>
+      </div>
+    </footer>
+  </div>
+  <!-- 레이어 팝업 -->
+  <div id="modal">
+    <div class="inner">
+      <div class="card">
+        <h1>레이어 팝업 제목</h1>
+        <p>레이어 팝업 내용입니다.</p>
+        <button class="btn-modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
