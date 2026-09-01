@@ -172,10 +172,8 @@ header nav .sub-menu > li a:hover {
 
 
 /* 공지사항 */
-#content-notice { /* margin-bottom: 100px; */ }
 .btn-modal { cursor: pointer; }
 /* 갤러리 */
-#content-gallery { /* margin-bottom: 100px; */ }
 .gallery {
     width: 100%;
     height: 160px;

@@ -96,13 +96,12 @@ header nav.sub .sub-menu > li {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: var(--sub-color);
 }
 header nav.sub .sub-menu > li a {
-    color: white; 
     display: inline-block;
     width: 100%;
     height: 100%;
+    color: var(--main-color);
 }
 header nav.sub .sub-menu > li a:hover {
     background-color: var(--main-color);
@@ -221,9 +220,7 @@ header nav.sub .sub-menu > li a:hover {
 /* 공지사항 */
 .btn-modal { cursor: pointer; }
 /* 갤러리 */
-#content-gallery { 
-    display: none;    
-}
+#gallery { display: none; }
 .gallery {
     width: 100%;
     height: 160px;
