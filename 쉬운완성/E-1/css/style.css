@@ -1,16 +1,20 @@
 @charset "utf-8";
+/* 초기화 */
 * { margin: 0; padding: 0; list-style: none; box-sizing: border-box; }
 a { text-decoration: none; color: #333; }
 body { background: #fff; color: #333; }
 
-/* E타입: 100vw 3열 grid(헤더200 + 컨텐츠400 + 슬라이드1fr) */
+/* 레이아웃 */
 .container { width: 100vw; display: grid; grid-template-columns: 200px 400px 1fr; grid-template-rows: calc(100vh - 120px); }
 header { background: #0331aa; display: flex; flex-direction: column; align-items: center; row-gap: 50px; padding: 20px; }
 #contents { display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; padding: 4% 0; }
 #slides { overflow: hidden; }
 footer { height: 120px; }
 
+/* 로고 */
 header .logo a img { width: 160px; height: auto; object-fit: contain; }
+
+/* 메뉴 */
 header nav { position: relative; z-index: 10; width: 100%; }
 header nav .main-menu { display: flex; flex-direction: column; align-items: center; }
 header nav .main-menu li { width: 160px; line-height: 50px; text-align: center; }
@@ -20,7 +24,7 @@ header nav .sub-menu { display: none; }
 header nav .sub-menu li { background: #fff; }
 header nav .sub-menu li a { color: #0331aa; }
 header nav .sub-menu li a:hover { background: #0331aa; color: #fff; }
-header .spot { display: flex; gap: 20px; font-size: 12px; }
+header .spot { display: flex; justify-content: center; gap: 20px; font-size: 12px; }
 header .spot a { color: #fff; }
 
 /* 배너 */
@@ -52,14 +56,16 @@ header .spot a { color: #fff; }
 .slide-container .slide { position: absolute; width: 100%; height: calc(100vh - 120px); }
 .slide-container .slide img { width: 100%; height: calc(100vh - 120px); object-fit: cover; }
 
+/* 푸터 */
 footer { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
 footer .footer-logo { filter: grayscale(100%); }
 footer .footer-logo a img { width: 160px; height: auto; }
-footer .inner { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+footer .inner { width: 100%; display: flex; flex-direction: column; align-items: start; gap: 10px; padding: 0 40px; }
 footer .fnb { display: flex; gap: 10px; }
 footer .fnb a { font-size: 12px; }
 footer .copy { font-size: 12px; }
 
+/* 레이어 팝업 */
 #modal { display: none; position: fixed; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; }
 #modal .inner { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
 #modal .card { background: #fff; padding: 20px; border-radius: 10px; width: 400px; text-align: center; }

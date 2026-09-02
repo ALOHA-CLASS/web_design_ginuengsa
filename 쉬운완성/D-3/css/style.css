@@ -26,7 +26,7 @@ header nav.sub .sub-menu > li a { display: inline-block; width: 100%; height: 10
 header nav.sub .sub-menu > li a:hover { background-color: #0331aa; color: white; }
 
 /* 스팟 메뉴 */
-header .spot { display: flex; gap: 20px; font-size: 12px; }
+header .spot { display: flex; justify-content: center; gap: 20px; font-size: 12px; }
 header .spot a { color: #fff; }
 
 /* 바로가기 */
