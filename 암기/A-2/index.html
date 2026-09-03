@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-2</title>
+  <!-- CSS -->
+  <!-- jQuery -->
+  <!-- JS -->
+</head>
+<body>
+  .container
+    header
+    .logo>a>img[src="images/logo.png" alt="로고"]
+    <!-- 가로 100% 멀티메뉴 -->
+    nav.main>ul.main-menu>(li>a[href="#"]{메인메뉴})*4
+    nav.sub>.inner>(ul.sub-menu>(li>a[href="#"]{서브메뉴})*4)*4
+
+    section#slides>div.slide-container>div.slide*3>a[href="#"]>img[src="images/slide$.jpg" alt="슬라이드$"]
+
+    section#contents
+      div
+        .tab-menu>div.menu-item.active>a[href="#"]{공지사항}
+        .tab-content
+        .content-item>ul>li*4>a[href="#"]>span+span
+      div    
+        .tab-menu>div.menu-item>a[href="#"]{갤러리}
+        .tab-content
+          #gallery.content-item>.gallery>.item*3>a[href="#"]>img[src="images/g$.jpg" alt="갤러리$"]
+      div>a.banner[href="#"]>img[src="images/banner.jpg" alt="배너"]
+
+    footer>.footer-logo>a[href="#"]>img[src="images/logo.png" alt="푸터 로고"]^div.copy>p{Copy}^.family>select>(option{사이트$})*4
+  
+  #modal>.inner>.card>h1{제목}+p{내용}+button.btn-modal{닫기}
+</body>
+</html>

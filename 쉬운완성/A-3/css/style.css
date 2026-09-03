@@ -51,9 +51,12 @@ header nav .sub-menu li a:hover { background: #0331aa; color: #fff; }
 /* 푸터 */
 footer { display: flex; justify-content: space-between; align-items: center; }
 footer .footer-logo { padding: 0 20px; filter: grayscale(100%); }
-footer .footer-logo a img { width: 200px; height: auto; }
-footer .copy { text-align: center; }
-footer .sns { display: flex; gap: 10px; padding: 0 20px; }
+footer .footer-logo a img { width: 200px; }
+footer .inner { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+footer .fnb { display: flex; gap: 10px; }
+footer .fnb a { font-size: 12px; }
+footer .copy { font-size: 12px; }
+
 
 /* 레이어 팝업 */
 #modal { display: none; position: fixed; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-1</title>
+  <!-- CSS -->
+  <!-- jQuery -->
+  <!-- JS -->
+</head>
+<body>
+  .container
+    header
+      .logo>a>img[src="images/logo.png" alt="로고"]
+      <!-- 가로 멀티메뉴 -->
+      nav>ul.main-menu>(li*4>a[href="#"]{메인메뉴}+ul.sub-menu>li*4>a[href="#"]{서브메뉴})
+
+    section#slides>.slide-container>.slide*3>a[href="#"]>img[src="images/slide$.jpg" alt="슬라이드$"]
+
+    section#contents
+      .tab
+        .tab-menu>.menu-item*2>a[href="#"] <!-- actvie 따로 추가 -->
+        .tab-content
+          .content-item>ul>li*4>a[href="#"]>span+span
+          #gallery.content-item>.gallery>.item*3>a[href="#"]>img[src="images/g$.jpg" alt="갤러리$"]
+      div>a.banner[href="#"]>img[src="images/banner.jpg" alt="배너"]
+      div>a.link[href="#"]>img[src="images/goto.jpg" alt="바로가기"]
+
+    footer>.footer-logo>a[href="#"]>img[src="images/logo.png" alt="푸터 로고"]^.copy>p{Copy}^.sns>a[href="#"]*3>img[src="images/sns$.jpg" alt="sns$"]
+  
+  #modal>.inner>.card>h1{제목}+p{내용}+button.btn-modal{닫기}
+</body>
+</html>

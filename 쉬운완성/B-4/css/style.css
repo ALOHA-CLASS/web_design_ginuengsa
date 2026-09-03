@@ -49,7 +49,7 @@ header nav.sub .sub-menu > li a:hover { background-color: #0331aa; color: white;
 /* 푸터 */
 footer { display: flex; justify-content: space-between; align-items: center; }
 footer .footer-logo { padding: 0 20px; filter: grayscale(100%); }
-footer .footer-logo a img { width: 200px; height: 40px; }
+footer .footer-logo a img { width: 200px; }
 footer .inner { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 footer .fnb { display: flex; gap: 10px; }
 footer .fnb a { font-size: 12px; }
