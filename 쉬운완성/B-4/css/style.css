@@ -48,12 +48,12 @@ header nav.sub .sub-menu > li a:hover { background-color: #0331aa; color: white;
 
 /* 푸터 */
 footer { display: flex; justify-content: space-between; align-items: center; }
-footer .footer-logo { padding: 0 20px; filter: grayscale(100%); }
-footer .footer-logo a img { width: 200px; }
 footer .inner { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 footer .fnb { display: flex; gap: 10px; }
 footer .fnb a { font-size: 12px; }
 footer .copy { font-size: 12px; }
+footer .family { padding: 0 20px; }
+footer .family select {  background: #eee; color: #0331aa; padding: 5px 10px; border-radius: 5px; }
 
 /* 레이어 팝업 */
 #modal { display: none; position: fixed; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; }
