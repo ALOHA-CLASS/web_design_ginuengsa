@@ -12,7 +12,7 @@ header { background: #0331aa; display: flex; flex-direction: column; align-items
 footer { height: 120px; }
 
 /* 로고 */
-header .logo a img { width: 160px; height: auto; object-fit: contain; }
+header .logo a img { width: 195px; height: 45px; }
 
 /* 메뉴 */
 header nav { position: relative; z-index: 10; width: 100%; }
@@ -40,7 +40,7 @@ header nav .sub-menu li a:hover { background: #0331aa; color: #fff; }
 .btn-modal { cursor: pointer; }
 .gallery { display: flex; justify-content: space-evenly; align-items: center; padding: 10px; }
 .gallery .item a { display: flex; flex-direction: column; align-items: center; }
-.gallery .item a img { width: 100px; height: 75px; object-fit: cover; }
+.gallery .item a img { width: 160px; height: 100px; }
 
 /* 바로가기 */
 .link nav { display: flex; justify-content: space-evenly; align-items: center; padding: 10px; }

@@ -10,10 +10,11 @@ $(function() {
   const size = $slide.width();
   $container.width(size * $slide.length);
   setInterval(function() {
-    $container.animate({ left: -size }, speed, function() {
-      $container.css("left", "0");
-      $container.append($(".slide").first());
-    });
+    $container.animate({ left: -size }, speed, 
+      function() {
+        $container.css("left", "0");
+        $container.append($(".slide").first());
+      });
   }, time);
 
   // 레이어 팝업

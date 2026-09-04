@@ -14,15 +14,15 @@ $(function() {
   const speed = 500, time = 2000;
   // - 슬라이드 선택
   const $slide = $(".slide");
-  // - 슬라이드 컨테이터 선택
+  // - 슬라이드 컨테이너 선택
   const $container = $(".slide-container");
   // - 슬라이드 크기
   const size = $slide.height();   // 300px
-  // - 슬라이드 컨테이터 크기 = 슬라이드 크기 * 3
+  // - 슬라이드 컨테이너 크기 = 슬라이드 크기 * 3
   $container.height(size * $slide.length);
   // - 타이머 함수
   //    * 컨테이너에 애니메이션
-  //    - animate( 1, 2, 3)
+  컨테이너//    - animate( 1, 2, 3 )
   //    - 1. { top : -size }
   //    - 2. speed
   //    - 3. 종료 
