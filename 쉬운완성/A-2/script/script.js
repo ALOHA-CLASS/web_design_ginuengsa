@@ -1,7 +1,7 @@
 $(function() {
   // 가로 100% 멀티메뉴
-  $(".main, .sub").on("mouseenter", function(){$(".sub").stop().slideDown()})
-  $(".main, .sub").on("mouseleave", function(){$(".sub").stop().slideUp()})
+  $(".main, .sub").on("mouseover", function(){$(".sub").stop().slideDown()})
+  $(".main, .sub").on("mouseout", function(){$(".sub").stop().slideUp()})
 
   // 슬라이드(가로 무한반복)
   const speed = 500, time = 2000;

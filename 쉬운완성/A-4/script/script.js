@@ -1,9 +1,9 @@
 $(function() {
   // 가로 100% 멀티메뉴
-  $(".main, .sub").on("mouseenter", function() { 
+  $(".main, .sub").on("mouseover", function() { 
     $(".sub").stop().slideDown(); 
   });
-  $(".main, .sub").on("mouseleave", function() { 
+  $(".main, .sub").on("mouseout", function() { 
     $(".sub").stop().slideUp(); 
   });
 

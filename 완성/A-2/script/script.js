@@ -1,10 +1,10 @@
 $(function() {
     /* ------------------- 💛메뉴 슬라이드💛 ------------------- */
     /* ------------------- ↔ 가로 100% 멀티   ------------------- */
-    $(".main, .sub").on("mouseenter", function(){
+    $(".main, .sub").on("mouseover", function(){
         $(".sub").stop().slideDown()
     })
-    $(".main, .sub").on("mouseleave", function(){
+    $(".main, .sub").on("mouseout", function(){
         $(".sub").stop().slideUp()
     })
     /* ------------------- 💛이미지 슬라이드💛 ------------------- */

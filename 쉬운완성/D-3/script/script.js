@@ -1,7 +1,7 @@
 $(function() {
   // 세로 100% 멀티메뉴
-  $(".main, .sub").on("mouseenter", function() { $(".sub").stop().fadeIn(); });
-  $(".main, .sub").on("mouseleave", function() { $(".sub").stop().fadeOut(); });
+  $(".main, .sub").on("mouseover", function() { $(".sub").stop().fadeIn(); });
+  $(".main, .sub").on("mouseout", function() { $(".sub").stop().fadeOut(); });
 
   // 슬라이드(페이드)
   let index = 0;

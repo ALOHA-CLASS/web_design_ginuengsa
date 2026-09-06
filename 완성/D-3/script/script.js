@@ -1,11 +1,11 @@
 
 $(function() {
     // 메뉴 슬라이드
-    $(".main, .sub").on("mouseenter", function(){
+    $(".main, .sub").on("mouseover", function(){
         $(".sub").stop().fadeIn()
         // $(".sub").stop().slideDown()
     })
-    $(".main, .sub").on("mouseleave", function(){
+    $(".main, .sub").on("mouseout", function(){
         $(".sub").stop().fadeOut()
         // $(".sub").stop().slideUp()
     })
