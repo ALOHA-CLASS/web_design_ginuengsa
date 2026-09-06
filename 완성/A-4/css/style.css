@@ -170,6 +170,7 @@ header nav.sub .sub-menu > li a:hover {
     justify-content: space-evenly;
     align-items: center;
 }
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 /* 배너 */
 .banner img { width: 100%; }
 /* 바로가기 */

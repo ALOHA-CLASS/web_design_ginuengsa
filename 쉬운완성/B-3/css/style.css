@@ -42,6 +42,7 @@ header nav .sub-menu li a:hover { background: #0331aa; color: #fff; }
 .content-item ul li:hover { filter: brightness(90%); }
 .btn-modal { cursor: pointer; }
 .gallery { width: 100%; height: 160px; display: flex; justify-content: space-evenly; align-items: center; }
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 .banner img { width: 100%; }
 
 /* 푸터 */

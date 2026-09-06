@@ -70,13 +70,13 @@ header nav .main-menu {
 header nav .main-menu li {
     width: 150px;
     line-height: 50px;
-    text-align: center;
 }
 header nav .main-menu li a { 
     color: white; 
     display: inline-block;
     width: 100%;
     height: 100%;
+    padding-left: 10px;
 }
 header nav .main-menu li a:hover {
     background-color: #333333;
@@ -242,7 +242,7 @@ header .spot a:not(:first-of-type)::before {
     justify-content: center;
     align-items: center;
 }
-
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 
 /* 바로가기 */
 .link {

@@ -184,7 +184,7 @@ header nav .sub-menu > li a:hover {
     align-items: center;
     gap: calc( (100% - 300px) / 4 );
 }
-
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 /* 배너 */
 .banner {
     height: 200px;

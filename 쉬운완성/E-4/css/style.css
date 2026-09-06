@@ -17,8 +17,8 @@ header .logo a img { width: 195px; height: 45px; }
 /* 메뉴 */
 header nav { position: relative; z-index: 10; width: 100%; }
 header nav .main-menu { display: flex; flex-direction: column; align-items: center; }
-header nav .main-menu li { position: relative; width: 160px; line-height: 50px; text-align: center; }
-header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; }
+header nav .main-menu li { position: relative; width: 160px; line-height: 50px; }
+header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; padding-left: 10px; }
 header nav .main-menu li a:hover { background: #333; }
 header nav .sub-menu { display: none; position: absolute; top: 0; left: 100%; }
 header nav .sub-menu li { background: #fff; }

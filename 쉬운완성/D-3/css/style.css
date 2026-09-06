@@ -16,8 +16,8 @@ header .logo a img { width: 160px; height: auto; object-fit: contain; }
 /* 세로 100% 멀티메뉴 */
 header .menu { width: 100%; position: relative;  z-index: 10;}
 header nav.main .main-menu { display: flex; flex-direction: column; align-items: center; }
-header nav.main .main-menu li { width: 160px; line-height: 50px; text-align: center; }
-header nav.main .main-menu li a { color: #fff; display: inline-block; width: 100%; }
+header nav .main-menu li { width: 160px; line-height: 50px; }
+header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; padding-left: 10px; }
 header nav.main .main-menu li a:hover { background: #333; }
 header nav.sub { display: none; position: absolute;top: 0; left: 100%; width: calc(100vw - 200px); }
 header nav.sub .inner { display: flex; justify-content: start; align-items: center; background-color: rgba(255,255,255,0.7); padding: 0 40px;}

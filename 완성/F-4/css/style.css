@@ -75,20 +75,22 @@ header nav .main-menu li a:hover {
 }
 
 header nav.sub {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 100px;
     left: 0;
     display: none;
     width: 100%;
     height: calc(50px * 4);
+    background-color: var(--sub-color);
 }
 
 header nav.sub .inner {
+    width: var(--container-width);
+    margin: 0 auto;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 0 20px;
-    background-color: var(--sub-color);
 }
 
 header nav.sub .sub-menu > li {

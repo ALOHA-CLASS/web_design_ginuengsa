@@ -5,9 +5,10 @@ a { text-decoration: none; color: #333; }
 body { background: #fff; color: #333; }
 
 /* 레이아웃 */
-.container { width: 100%; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: calc(400px + 200px + 250px); }
+.container { width: 100%; display: grid; grid-template-columns: 200px 1fr; }
 header { background: #0331aa; display: flex; flex-direction: column; align-items: center; row-gap: 50px; padding: 20px; }
 section { width: 100%; }
+#contents > .inner { display: grid; grid-template-columns: 1fr 230px; grid-template-rows: 400px; }
 footer { width: 100%; height: 100px; }
 
 /* 로고 */
@@ -15,8 +16,8 @@ header .logo a img { width: 160px; height: auto; object-fit: contain; }
 /* 메뉴 */
 header nav { position: relative; z-index: 10; width: 100%; }
 header nav .main-menu { display: flex; flex-direction: column; align-items: center; }
-header nav .main-menu li { width: 160px; line-height: 50px; text-align: center; }
-header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; }
+header nav .main-menu li { width: 160px; line-height: 50px; }
+header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; padding-left: 10px; }
 header nav .main-menu li a:hover { background: #333; }
 header nav .sub-menu { display: none; }
 header nav .sub-menu li { background: #fff; }
@@ -36,8 +37,7 @@ header .spot a { color: #fff; }
 .banner h1 { font-size: 24px; }
 
 /* 컨텐츠 */
-#contents { display: grid; grid-template-rows: 600px 250px; }
-.tab { display: grid; grid-template-columns: repeat(2, 1fr); padding: 20px; }
+.tab { display: grid; grid-template-columns: auto auto; gap: 40px; padding: 20px; }
 .tab-menu { display: flex; height: 40px; }
 .tab-menu .menu-item { width: 100px; height: 40px; line-height: 40px; text-align: center; background: #0331aa; }
 .tab-menu .menu-item a { display: inline-block; width: 100%; height: 100%; color: #fff; }

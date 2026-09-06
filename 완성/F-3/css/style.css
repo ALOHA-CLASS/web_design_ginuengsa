@@ -75,20 +75,23 @@ header nav .main-menu li a:hover {
 }
 
 header nav.sub {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 100px;
     left: 0;
     display: none;
     width: 100%;
     height: calc(50px * 4);
+    z-index: 100;
+    background-color: var(--sub-color);
 }
 
 header nav.sub .inner {
+    width: var(--container-width);
+    margin: 0 auto;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 0 20px;
-    background-color: var(--sub-color);
 }
 
 header nav.sub .sub-menu > li {
@@ -234,8 +237,7 @@ header nav.sub .sub-menu > li a:hover {
     justify-content: center;
     align-items: center;
 }
-/* 갤러리의 이미지에 마우스 오버(mouse over) 시 해당 객체의 투명도(Opacity)에 변화가 있어야 한다 */
-.gallery .item a:hover { opacity: 0.7; }
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 /* 배너 */
 .banner img { width: 100%; }
 /* 바로가기 */

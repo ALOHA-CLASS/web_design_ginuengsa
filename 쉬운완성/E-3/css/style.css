@@ -17,8 +17,8 @@ header .logo a img { width: 160px; height: auto; object-fit: contain; }
 /* 메뉴 */
 header nav { position: relative; z-index: 10; width: 100%; }
 header nav .main-menu { display: flex; flex-direction: column; align-items: center; }
-header nav .main-menu li { position: relative; width: 160px; line-height: 50px; text-align: center; }
-header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; }
+header nav .main-menu li { position: relative; width: 160px; line-height: 50px;  }
+header nav .main-menu li a { color: #fff; display: inline-block; width: 100%; padding-left: 10px; }
 header nav .main-menu li a:hover { background: #333; }
 header nav .sub-menu { display: none; position: absolute; top: 0; left: 100%; }
 header nav .sub-menu li { background: #fff; }
@@ -43,6 +43,7 @@ header .spot a { color: #fff; }
 .gallery { display: flex; justify-content: space-evenly; align-items: center; padding: 10px; }
 .gallery .item a { display: flex; flex-direction: column; align-items: center; }
 .gallery .item a img { width: 160px; }
+.gallery img:hover { opacity: 0.5; }  /* 갤러리 이미지 투명도 변화 ⭐ */
 
 /* 슬라이드(세로) */
 .slide-container { position: relative; display: flex; flex-direction: column; }
