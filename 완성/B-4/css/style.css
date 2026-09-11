@@ -19,10 +19,15 @@ body {
     margin: auto;
 }
 header {
-    position: relative;
     width: 100%;
     height: 100px;
     background-color: var(--main-color);
+}
+header .wrap {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +42,14 @@ section {
 footer {
     width: 100%;
     height: 100px;
+}
+footer .wrap {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* UI */
@@ -195,12 +208,6 @@ header nav.sub .sub-menu > li a:hover {
 
 
 /* 푸터 */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* footer inner */
 footer .inner {
     width: 100%;
